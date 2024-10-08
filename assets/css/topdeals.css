@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Top Deals */
+.top-deals {
+  color: #1e1e1e;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 50.4px;
+  font-family: "Outfit";
+  text-align: center;
+}
+
+.topCard {
+  position: relative;
+  overflow: hidden;
+  /* transition: transform 0.1s ease, box-shadow 0.3s ease; */
+  margin: 5px 12px;
+  padding: 0 !important;
+  border-radius: 0px !important;
+}
+
+/* .topCard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0);
+    border: 1px solid #304FFE;
+    cursor: pointer;
+} */
+
+.trending-badge {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  width: 6rem;
+  background-color: #304ffe;
+  font-family: "Outfit";
+  color: #fff;
+  z-index: 2;
+  font-weight: 400;
+  border-radius: 5px;
+}
+
+.content-badge {
+  position: absolute;
+  top: 50%; /* Align vertically */
+  left: 50%; /* Align horizontally */
+  transform: translate(-50%, -50%); /* Center the text */
+  color: white;
+  z-index: 2;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37.8px;
+  font-family: "Outfit";
+  text-align: center;
+}
+
+@media screen and (min-width: 999px) and (max-width: 1200px) {
+  .content-badge {
+    font-weight: 600;
+    font-size: 25px;
+  }
+  .trending-badge {
+    font-weight: 300;
+  }
+}
+
