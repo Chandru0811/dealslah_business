@@ -1,6 +1,4 @@
-
-
-.navbar-headbrand{
+.navbar-headbrand {
     text-decoration: none;
     color: #304ffe;
     font-weight: 700;
@@ -10,7 +8,7 @@
     padding: 0 8px;
 }
 
-.navbar-subbrand{
+.navbar-subbrand {
     color: #1e1e1e;
     font-weight: 600;
     font-size: 14px;
@@ -19,11 +17,11 @@
     padding: 0 7rem;
 }
 
-.form-control{
+.form-control {
     border-radius: 0px;
 }
 
-.form-select{
+.form-select {
     border-radius: 0px;
     color: #b1b1b1;
     font-weight: 600;
@@ -33,7 +31,7 @@
     padding-right: 40px;
 }
 
-.form-control::placeholder{
+.form-control::placeholder {
     color: #b1b1b1;
     font-weight: 600;
     font-size: 18px;
@@ -41,14 +39,14 @@
     line-height: 22.68px;
 }
 
-.input-group-text{
+.input-group-text {
     background-color: #304ffe;
     color: #fff;
     border-radius: 0px;
 }
 
 @media screen and (max-width: 380px) and (min-width: 320px) {
-    .navbar-headbrand{
+    .navbar-headbrand {
         text-decoration: none;
         color: #304ffe;
         font-weight: 700;
@@ -57,8 +55,8 @@
         line-height: 45.36px;
         padding: 0 8px;
     }
-    
-    .navbar-subbrand{
+
+    .navbar-subbrand {
         color: #1e1e1e;
         font-weight: 600;
         font-size: 12px;
@@ -66,6 +64,7 @@
         line-height: 20.16px;
         padding: 0 6rem;
     }
+
     .navbar-toggler .button {
         display: flex;
         max-width: 120px;
@@ -203,24 +202,6 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .connect .footer-form {
-        background: none !important;
-        border: none;
-        border-bottom: 1px solid;
-        border-radius: 0;
-        font-weight: 700;
-        margin: 0;
-        box-shadow: none !important;
-        text-align: start !important;
-        padding: 18px 0;
-    }
-
-    .conect_heading {
-        margin-top: 0 !important;
-    }
-}
-
 @media (max-width: 992px) {
     .footer .row {
         display: flex;
@@ -259,7 +240,7 @@
     padding: 5px 25px !important;
     background-color: #ffff !important;
     /* margin-top: 10px; */
-    /* font-family: "Outfit"; */
+    font-family: "Outfit";
     font-size: 24px;
     font-weight: 600;
     line-height: 30.24px;
@@ -275,6 +256,7 @@
     font-weight: 600;
     /* margin-top: 10px; */
 }
+
 .footer-title {
     cursor: pointer;
     position: relative;
@@ -285,13 +267,31 @@
     line-height: 30.24px;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1200px) {
+@media (max-width: 990px) {
+    .footer-content {
+        padding: 15px 0;
+    }
+
     .footersearch {
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
+    }
+
+    .footer-btn {
+        text-align: center;
+    }
+
+    .footersearch input {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .footer-title {
+        text-align: center;
+    }
+
+    .footer-links {
+        text-align: center;
     }
 }
-
-
 
 /* Footer End  */
