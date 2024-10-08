@@ -58,6 +58,7 @@
     line-height: 20.16px;
 }
 
+
 .commerce_amount {
     /* font-family: "Outfit"; */
     font-size: 20px !important;
@@ -72,6 +73,7 @@
     font-size: 20px !important;
     font-weight: 500;
     line-height: 25.2px;
+    margin-bottom: 0 !important;
 
 }
 
@@ -133,6 +135,8 @@
     border-radius: 5px;
     /* Rounded corners */
     font-size: 14px;
+    color: #fff;
+    width: 44%;
 }
 
 .commerce_card {
@@ -156,7 +160,17 @@
 }
 
 .commerce_content {
-    white-space: nowrap;
+    font-size: 18px;
+    /* Set font size greater than 16px */
+    display: -webkit-box;
+    /* For WebKit browsers */
+    -webkit-line-clamp: 3;
+    /* Number of lines to show before truncation */
+    -webkit-box-orient: vertical;
     overflow: hidden;
+    /* Hide overflow content */
     text-overflow: ellipsis;
+    /* Add ellipsis at the end */
+    line-height: 1.2;
+    /* Adjust line height if needed */
 }
