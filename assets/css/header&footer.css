@@ -100,7 +100,7 @@
 
 .icon-wrapper {
     background-color: #ffff;
-    padding: 8px;
+    padding: 3px;
     border-radius: 3px;
     display: inline-block;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -112,6 +112,12 @@
     font-size: 20px;
 }
 
+@media screen and (max-width: 2200px) and (min-width: 1920px) {
+    .large-inputs{
+      padding-left: 100px;
+    }
+  }
+  
 /* Footer Start  */
 
 .footer {
