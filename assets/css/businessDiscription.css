@@ -1,88 +1,396 @@
-body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .offer-price {
-    font-size: 24px;
-    color: #304FFE;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
-    font-weight: bold;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit";
+}
+
+/* Header & Footer */
+.navbar-headbrand {
+  text-decoration: none;
+  color: #304ffe;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "Outfit";
+  line-height: 45.36px;
+  padding: 0 8px;
+}
+
+.navbar-subbrand {
+  color: #1e1e1e;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "Outfit";
+  line-height: 20.16px;
+  padding: 0 7rem;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.form-select {
+  border-radius: 0px;
+  color: #b1b1b1;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Outfit";
+  line-height: 22.68px;
+  padding-right: 40px;
+}
+
+.form-control::placeholder {
+  color: #b1b1b1;
+  font-weight: 600;
+  font-size: 18px;
+  font-family: "Outfit";
+  line-height: 22.68px;
+}
+
+.input-group-text {
+  background-color: #304ffe;
+  color: #fff;
+  border-radius: 0px;
+}
+
+@media screen and (max-width: 380px) and (min-width: 320px) {
+  .navbar-headbrand {
+    text-decoration: none;
+    color: #304ffe;
+    font-weight: 700;
+    font-size: 25px;
+    font-family: "Outfit";
+    line-height: 45.36px;
+    padding: 0 8px;
   }
-  
-  .old-price {
-    text-decoration: line-through;
-    color: gray;
+
+  .navbar-subbrand {
+    color: #1e1e1e;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: "Outfit";
+    line-height: 20.16px;
+    padding: 0 6rem;
   }
-  
-  .btn-deal {
-    height: 30px;
+
+  .navbar-toggler .button {
+    display: flex;
+    max-width: 120px;
   }
-  
-  .product-description {
-    font-size: 14px;
-    color: #666;
+}
+
+.nav-link {
+  padding: 15px 20px;
+  color: #304ffe;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #304ffe;
+  color: #fff;
+}
+
+.nav-link.active {
+  background-color: #304ffe;
+  color: #fff;
+}
+
+.nav-link {
+  border-radius: 0px;
+}
+
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background-color: #304ffe;
+}
+
+.icon-wrapper {
+  background-color: #ffff;
+  padding: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-right: 5px;
+}
+
+.icon-wrapper i {
+  color: black;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 2200px) and (min-width: 1920px) {
+  .large-inputs {
+    padding-left: 100px;
   }
-  
-  .action-buttons {
-    margin-top: 15px;
+}
+
+/* Footer Start  */
+
+.footer {
+  background-color: #ffff;
+  padding: 15px 0;
+}
+
+.footer-conent {
+  color: #ffff;
+  background-color: #304ffe;
+  padding: 15px 0;
+}
+
+.connect_heading {
+  color: #304ffe !important;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 69.33px;
+  text-align: left;
+}
+
+.connect {
+  padding: 0 0 40px 0 !important;
+}
+
+/* form */
+.connect .footer-form {
+  background: none !important;
+  border: none;
+  border-bottom: 1px solid #333333 !important;
+  border-radius: 0;
+  font-weight: 700;
+  margin: 1.8rem 0;
+  box-shadow: none !important;
+  text-align: start !important;
+  padding: 24px 0;
+}
+
+@media screen and (max-width: 555px) {
+  .input-colum {
+    width: 100% !important;
+    margin-bottom: 15px;
   }
-  
-  .action-buttons .btn {
-    margin-right: 10px;
-    border-radius: 5px;
+
+  .footer-title {
+    margin: 0 auto 15px auto;
   }
-  
-  .product-images-section {
-    margin-top: 30px;
+
+  .links {
+    text-align: center !important;
+    display: flex;
+    justify-content: center;
   }
-  
-  .product-images-section .product-images-title {
+
+  .links2 {
+    text-align: center !important;
+  }
+
+  .footer-links {
+    padding: 0 !important;
+  }
+
+  .footer-links .links {
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .footer-links .links2 {
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .headings {
     text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 20px;
   }
-  
-  .btn-download {
-    background-color: #304FFE;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+
+  .headings img {
+    display: none;
   }
-  
-  .product-image-thumbnail {
-    background-image: url('../images/carousel.png');
-    background-size: cover;
-    background-position: center;
-    height: 150px;
+
+  .send_btn {
+    text-align: center;
+  }
+
+  .conect_heading {
+    text-align: center;
+    line-height: 2rem !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer .row {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 16px;
-    margin-bottom: 15px;
+    flex-direction: row;
   }
-  .product-discription {
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 16px;
-    margin-bottom: 15px;
-    border: solid 1px #304FFE;
+}
+
+.conect_heading {
+  margin-top: 8rem;
+  line-height: 4rem;
+}
+
+.underline_img {
+  position: absolute;
+}
+
+.footer-links .links {
+  margin: 30px 0;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.footer-links .links2 {
+  margin: 30px 0;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.line-divider i {
+  /* border-right: 1px solid; */
+  padding: 0 9px;
+}
+
+.footer-btn {
+  border: 1px;
+  padding: 5px 25px !important;
+  background-color: #ffff !important;
+  /* margin-top: 10px; */
+  font-family: "Outfit";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30.24px;
+  text-align: left;
+}
+
+.footer-btn:hover {
+  border: 1px;
+  color: #304ffe !important;
+  background-color: #ffff !important;
+  padding: 5px 25px !important;
+  font-weight: 600;
+  /* margin-top: 10px; */
+}
+
+.footer-title {
+  cursor: pointer;
+  position: relative;
+  top: 2px;
+  font-family: "Outfit";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30.24px;
+}
+
+@media (max-width: 990px) {
+  .footer-content {
+    padding: 15px 0;
   }
-  
-  .product-image {
-    background-image: url('../images/carousel.png');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
+
+  .footersearch {
+    flex-direction: column;
   }
-  
+
+  .footer-btn {
+    text-align: center;
+  }
+
+  .footersearch input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .footer-title {
+    text-align: center;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+}
+
+/* Footer End  */
+
+.offer-price {
+  font-size: 24px;
+  color: #304ffe;
+
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.btn-deal {
+  height: 30px;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.action-buttons {
+  margin-top: 15px;
+}
+
+.action-buttons .btn {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.product-images-section {
+  margin-top: 30px;
+}
+
+.product-images-section .product-images-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn-download {
+  background-color: #304ffe;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.product-image-thumbnail {
+  background-image: url("../images/carousel.png");
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.product-discription {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: solid 1px #304ffe;
+}
+
+.product-image {
+  background-image: url("../images/carousel.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
