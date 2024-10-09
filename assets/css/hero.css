@@ -1,3 +1,28 @@
+/* Header  */
+
+.offcanvas-toggler {
+  background-color: #304ffe; 
+  color: #fff; 
+  border: none; 
+  padding: 10px 20px; 
+  border-radius: 5px; 
+  font-size: 16px; 
+  transition: background-color 0.3s; 
+}
+
+/* Customize submenu links */
+.offcanvas-body .collapse .nav-link {
+  padding-left: 20px; /* Indent submenu items */
+  color: #6c757d; /* Submenu text color */
+}
+
+.offcanvas-body .collapse .nav-link:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+
+/* Hero Section  */
+
 .btn-secondary.dropdown-toggle {
     background-color: #fff;
     color: #000;

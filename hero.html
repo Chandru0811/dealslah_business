@@ -3,34 +3,214 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dealslah Business</title>
 
-    <!-- CDN CSS -->
+    <link rel="icon" href="./assets/images/favicon.ico" />
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Files -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
-
     <link rel="stylesheet" href="./assets/css/hero.css" />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
+
+    <!-- AOS Animation CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
   </head>
+
   <body>
-    <section class="mt-5">
+
+    <!-- Header Start  -->
+    <section class="header">
+        <nav id="NavBar" class="navbar container mainNav navbar-expand-xl navbar-light" style="background-color: #fff !important">
+            <div class="container-fluid d-flex align-items-center justify-content-between">
+                <div class="">
+                    <a class="navbar-headbrand text-center">DEALSLAH</a>
+                    <p class="navbar-subbrand mb-0">Business</p>
+                </div>
+
+               <!-- Off-canvas Button for Mobile View -->
+               <div class="d-flex align-items-center mb-1 d-md-none">
+                <button class="navbar-toggler offcanvas-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCategory" aria-controls="offcanvasCategory">
+                    <span>Category</span>
+                </button>
+            </div>
+
+                <div class="d-flex align-items-center mb-1">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <!-- Collapsed View (Small Screens) -->
+                    <form class="mx-auto d-xl-none">
+                        <ul class="navbar-nav pt-2" id="default-search">
+                            <li class="nav-item mb-2">
+                                <div>
+                                    <input type="text" class="form-control mb-2 py-4" placeholder="ITEM NAME"
+                                        style="border: 1px solid #b1b1b1" />
+                                </div>
+                                <div class="input-group">
+                                    <select aria-describedby="basic-addon1" class="form-select py-4"
+                                        aria-label="Default select example"
+                                        style="border: 1px solid #b1b1b1;border-right: 0px;">
+                                        <option selected class="select-text">Select Category</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                    <span class="input-group-text" id="basic-addon1"> <i
+                                            class="fa-solid fa-magnifying-glass search-icon" size="40"></i></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+
+                    <div class="d-flex flex-column d-xl-none ps-5">
+                        <a class="nav-link active" href="home">HOME</a>
+                        <a class="nav-link" href="menu1">MENU1</a>
+                        <a class="nav-link" href="menu2">MENU2</a>
+                        <a class="nav-link" href="menu3">MENU3</a>
+                        <a class="nav-link" href="menu4">MENU4</a>
+                    </div>
+
+                    <!-- Expanded View (Large Screens) -->
+                    <div class="d-none d-xl-flex justify-content-center align-items-center">
+                        <div>
+                            <input type="text" class="form-control " placeholder="ITEM NAME"
+                                style="border: 1px solid #b1b1b1; padding-top: 12px  ;padding-bottom: 12px; width: 350px" />
+                        </div>
+                        <div class="input-group">
+                            <select aria-describedby="basic-addon1" class="form-select"
+                                aria-label="Default select example"
+                                style="border: 1px solid #b1b1b1;padding-top: 12px  ;padding-bottom: 12px; width: 350px;border-right: 0px;">
+                                <option selected class="select-text">Select Category</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                            <span class="input-group-text" id="basic-addon1"> <i
+                                    class="fa-solid fa-magnifying-glass search-icon" size="40"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCategory" aria-labelledby="offcanvasCategoryLabel">
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasCategoryLabel">CATEGORY MENU</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#hardwareSubmenu" aria-expanded="false" aria-controls="hardwareSubmenu">
+                  HARDWARE
+              </a>
+              <div class="collapse" id="hardwareSubmenu">
+                  <ul class="list-unstyled ps-3">
+                      <li><a href="#" class="nav-link">STORAGE DEVICES</a></li>
+                      <li><a href="#" class="nav-link">INPUT DEVICES</a></li>
+                      <li><a href="#" class="nav-link">OUTPUT DEVICES</a></li>
+                  </ul>
+              </div>
+      
+              <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#softwareSubmenu" aria-expanded="false" aria-controls="softwareSubmenu">
+                SOFTWARE
+            </a>
+            <div class="collapse" id="softwareSubmenu">
+                <ul class="list-unstyled ps-3">
+                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Accounting Software</a></li>
+                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Graphics Software</a></li>
+                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Freeware</a></li>
+                </ul>
+            </div>
+              <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#computerSubmenu" aria-expanded="false" aria-controls="computerSubmenu">
+                  Computer
+              </a>
+              <div class="collapse" id="computerSubmenu">
+                  <ul class="list-unstyled ps-3">
+                      <li><a href="#" class="nav-link" style="text-transform: uppercase;">Desktops</a></li>
+                      <li><a href="#" class="nav-link" style="text-transform: uppercase;">Monitors</a></li>
+                      <li><a href="#" class="nav-link" style="text-transform: uppercase;">Accessories</a></li>
+                  </ul>
+              </div>
+      
+              <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#laptopSubmenu" aria-expanded="false" aria-controls="laptopSubmenu">
+                LAPTOPS
+            </a>
+            <div class="collapse" id="laptopSubmenu">
+                <ul class="list-unstyled ps-3">
+                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">HP</a></li>
+                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Lenovo</a></li>
+                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Dell</a></li>
+                </ul>
+            </div>
+              <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#serverSubmenu" aria-expanded="false" aria-controls="serverSubmenu">
+                SERVER PARTS
+            </a>
+            <div class="collapse" id="serverSubmenu">
+                <ul class="list-unstyled ps-3">
+                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Motherboard</a></li>
+                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Central Processing Unit</a></li>
+                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Random Access Memory</a></li>
+                </ul>
+            </div>
+              <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#microsoftSubmenu" aria-expanded="false" aria-controls="microsoftSubmenu">
+                MICROSOFT OFFICE
+            </a>
+            <div class="collapse" id="microsoftSubmenu">
+                <ul class="list-unstyled ps-3">
+                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Word</a></li>
+                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Excel</a></li>
+                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">PowerPoint</a></li>
+                </ul>
+            </div>
+          </div>
+      </div>
+      
+
+        <nav class="nav pb-2 d-none d-xl-flex">
+            <div class="horizontal-line"></div>
+            <div class="container d-flex ps-5">
+                <a class="nav-link active" href="home">HOME</a>
+                <a class="nav-link" href="#">MENU1</a>
+                <a class="nav-link" href="#">MENU2</a>
+                <a class="nav-link" href="#">MENU3</a>
+                <a class="nav-link" href="#">MENU4</a>
+            </div>
+            <div class="horizontal-line"></div>
+        </nav>
+    </section>
+    <!-- Header End  -->
+
+    <!-- Hero Seactio Start -->
+     <section class="hero mt-2">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-12 col-12">
+          <div class="col-lg-4 col-md-4 col-12 d-none d-md-block">
             <div class="dropdown">
               <a
                 class="btn btn-secondary d-flex align-items-center dropdown-toggle no-arrow"
+                style="border-bottom: none;"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -50,22 +230,22 @@
                   class="category ps-2 mt-3"
                   style="border-left: 0.5px solid #bababa"
                 >
-                  ELECTRONICS
+                  Hardware
                 </p>
               </a>
 
               <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item category_sub" href="#"
-                    >Moblie Phones</a
+                    >Storage devices</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item category_sub" href="#">Tablet</a>
+                  <a class="dropdown-item category_sub" href="#">Input devices</a>
                 </li>
                 <li>
                   <a class="dropdown-item category_sub" href="#"
-                    >Laptops & Computer</a
+                    >Output devices</a
                   >
                 </li>
               </ul>
@@ -73,6 +253,7 @@
             <div class="dropdown">
               <a
                 class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -92,27 +273,28 @@
                   class="category ps-2 mt-3"
                   style="border-left: 0.5px solid #bababa"
                 >
-                  RESTAURANTS
+                Software
                 </p>
               </a>
 
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item category_sub" href="#">Fine Dining</a>
+                  <a class="dropdown-item category_sub" href="#">Accounting Software</a>
                 </li>
                 <li>
                   <a class="dropdown-item category_sub" href="#"
-                    >Casual Dining</a
+                    >Graphics Software</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item category_sub" href="#">Fast Foods</a>
+                  <a class="dropdown-item category_sub" href="#">Freeware</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown">
               <a
                 class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -132,25 +314,26 @@
                   class="category ps-2 mt-3"
                   style="border-left: 0.5px solid #bababa"
                 >
-                  BEAUTY
+                Computer
                 </p>
               </a>
 
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item category_sub" href="#">Skin Care</a>
+                  <a class="dropdown-item category_sub" href="#">Apple</a>
                 </li>
                 <li>
-                  <a class="dropdown-item category_sub" href="#">Makeup</a>
+                  <a class="dropdown-item category_sub" href="#">HP</a>
                 </li>
                 <li>
-                  <a class="dropdown-item category_sub" href="#">Hair Care</a>
+                  <a class="dropdown-item category_sub" href="#">Dell</a>
                 </li>
               </ul>
             </div>
             <div class="dropdown">
               <a
                 class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -170,22 +353,22 @@
                   class="category ps-2 mt-3"
                   style="border-left: 0.5px solid #bababa"
                 >
-                  EDUCATION
+                Laptops
                 </p>
               </a>
 
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item category_sub" href="#">Courses</a>
+                  <a class="dropdown-item category_sub" href="#">HP</a>
                 </li>
                 <li>
                   <a class="dropdown-item category_sub" href="#"
-                    >Training Kits</a
+                    >Lenovo</a
                   >
                 </li>
                 <li>
                   <a class="dropdown-item category_sub" href="#"
-                    >Study Materials</a
+                    >Dell</a
                   >
                 </li>
               </ul>
@@ -193,6 +376,7 @@
             <div class="dropdown">
               <a
                 class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -212,24 +396,24 @@
                   class="category ps-2 mt-3"
                   style="border-left: 0.5px solid #bababa"
                 >
-                  GROCERIES
+                Server Parts
                 </p>
               </a>
 
               <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item category_sub" href="#"
-                    >Fruits & Vegetables</a
+                    >Motherboard</a
                   >
                 </li>
                 <li>
                   <a class="dropdown-item category_sub" href="#"
-                    >Dairy Products</a
+                    >Central Processing Unit</a
                   >
                 </li>
                 <li>
                   <a class="dropdown-item category_sub" href="#"
-                    >Bakery Items</a
+                    >Random Access Memory</a
                   >
                 </li>
               </ul>
@@ -237,6 +421,7 @@
             <div class="dropdown">
               <a
                 class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
@@ -256,23 +441,23 @@
                   class="category ps-2 mt-3"
                   style="border-left: 0.5px solid #bababa"
                 >
-                  WELLNESS
+                Microsoft Office
                 </p>
               </a>
 
               <ul class="dropdown-menu">
                 <li>
                   <a class="dropdown-item category_sub" href="#"
-                    >Mental Health</a
+                    >Word</a
                   >
                 </li>
                 <li>
                   <a class="dropdown-item category_sub" href="#"
-                    >Physical Health</a
+                    >Excel</a
                   >
                 </li>
                 <li>
-                  <a class="dropdown-item category_sub" href="#">Fitness</a>
+                  <a class="dropdown-item category_sub" href="#">PowerPoint</a>
                 </li>
               </ul>
             </div>
@@ -289,7 +474,7 @@
             </div>
           </div>
 
-          <div class="col-lg-8 col-md-12 col-12">
+          <div class="col-lg-8 col-md-8 col-12">
             <div
               id="carouselExampleCaptions"
               class="carousel slide"
@@ -320,21 +505,21 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img
-                    src="./assets/images/carousel.png"
+                    src="./assets/images/Slider 2.png"
                     class="d-block full-width"
                     alt="..."
                   />
                 </div>
                 <div class="carousel-item">
                   <img
-                    src="./assets/images/carousel.png"
+                    src="./assets/images/Slider 3.png"
                     class="d-block full-width"
                     alt="..."
                   />
                 </div>
                 <div class="carousel-item">
                   <img
-                    src="./assets/images/carousel.png"
+                    src="./assets/images/Slider 5.png"
                     class="d-block full-width"
                     alt="..."
                   />
@@ -369,12 +554,140 @@
         </div>
       </div>
     </section>
+    <!-- Hero Seaction End -->
 
-    <!-- CDN JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+     <!-- Footer Start  -->
+     <section class="footer-conent mt-5">
+      <div class="container">
+          <div class="row m-0 m-0">
+              <div class="col-md-2 text-start mt-4">
+                  <div class="headings">
+                      <h5 class="footer-title">DEALSLAH</h5>
+                  </div>
+              </div>
+              <div class="col-md-2 text-start mt-4">
+                  <div class="headings">
+                      <h5 class="footer-title">Help</h5>
+                  </div>
+                  <div class="footer-links">
+                      <div class="links2">
+                          <a href="#" rel="noopener noreferrer" class="text-decoration-none"
+                              style="font-size: 16px; color: #ffff">Blog</a>
+                      </div>
+                      <div class="links2">
+                          <a href="#" rel="noopener noreferrer" class="text-decoration-none"
+                              style="font-size: 16px; color: #ffff">Press</a>
+                      </div>
+                      <div class="links2">
+                          <a href="contact_us" rel="noopener noreferrer" class="text-decoration-none"
+                              style="font-size: 16px; color: #ffff">FAQ</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 text-start mt-4">
+                  <div class="headings">
+                      <h5 class="footer-title" style="white-space: nowrap">
+                          CATEGORIES
+                      </div>
+                  <div class="footer-links">
+                      <div class="links2">
+                          <a href="#" class="text-decoration-none" style="font-size: 16px; color: #ffff">
+                              Electronics
+                          </a>
+                      </div>
+                      <div class="links2">
+                          <a href="#" class="text-decoration-none" style="font-size: 16px; color: #ffff">
+                              Restaurants
+                          </a>
+                      </div>
+                      <div class="links2">
+                          <a href="#" class="text-decoration-none" style="font-size: 16px; color: #ffff">
+                              Beauty
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-5 mt-4">
+                  <div class="footersearch d-flex gap-3">
+                      <input name="email" class="form-control-sm form-control" type="text">
+                      <button class="btn footer-btn p-2">
+                          SUBSCRIBE
+                      </button>
+                  </div>
+                  <div class="text-start p-5">
+                      <div class="list-unstyled d-flex justify-content-center align-items-center">
+                          <span class="icon-wrapper">
+                              <a href="https://www.facebook.com/ecscloud/" target="_blank" rel="noopener noreferrer"
+                                  class="text-decoration-none line-divider">
+                                  <i class="fa-brands fa-facebook"></i>
+                              </a>
+                          </span>
+                          <span class="icon-wrapper">
+                              <a href="https://x.com/ecscloudinfote2" target="_blank" rel="noopener noreferrer"
+                                  class="text-decoration-none line-divider">
+                                  <i class="fab fa-x-twitter"></i>
+                              </a>
+                          </span>
+                          <span class="icon-wrapper">
+                              <a href="https://www.instagram.com/ecscloudinfotech/" target="_blank"
+                                  rel="noopener noreferrer" class="text-decoration-none line-divider">
+                                  <i class="fab fa-instagram"></i>
+                              </a>
+                          </span>
+                          <span class="icon-wrapper">
+                              <a href="https://sg.linkedin.com/company/ecs-cloud-infotech" target="_blank"
+                                  rel="noopener noreferrer" class="text-decoration-none line-divider">
+                                  <i class="fa-brands fa-linkedin"></i>
+                              </a>
+                          </span>
+                          <span class="icon-wrapper">
+                              <a href="https://www.youtube.com/channel/UCIbNIWhaDnRs-gFuJ0sTNCQ/videos"
+                                  target="_blank" rel="noopener noreferrer" class="text-decoration-none line-divider">
+                                  <i class="fab fa-youtube"></i>
+                              </a>
+                          </span>
+                          <span class="icon-wrapper">
+                              <a href="https://www.tiktok.com/@ecsaio" target="_blank" rel="noopener noreferrer"
+                                  class="text-decoration-none line-divider">
+                                  <i class="fa-brands fa-tiktok"></i>
+                              </a>
+                          </span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+      <hr />
+      <div class="copyrights">
+          <p class="text-center m-0">
+              Terms and Conditions |
+              Privacy Policy |
+              2024 © Copyright Dealslah Business Pvt Ltd. All Rights Reserved.
+          </p>
+      </div>
+  </section>
+  <!-- Footer End  -->
+
+
+  <script
+    src="https://kit.fontawesome.com/5b8838406b.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+    async
+  ></script>
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <!-- jQuery Validator -->
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="./assets/js/custom.js"></script>
+</body>
 </html>
