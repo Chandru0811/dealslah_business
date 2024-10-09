@@ -311,289 +311,86 @@
 
 /* Footer End  */
 
-/* Hero Section */
-
-.hero .btn-secondary.dropdown-toggle {
-  background-color: #fff;
-  color: #000;
-  padding: 10px 20px;
-  font-size: 16px;
-  /* border: none; */
-  border: 0.5px solid #bababa;
-  /* border-bottom: none; */
-  height: 50px;
-  /* width: 300px; */
-  width: 100%;
-  border-radius: 0;
-}
-
-.hero .btn-secondary.dropdown-toggle:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.hero .no-arrow::after {
-  display: none;
-}
-
-.hero .dropdown-menu {
-  width: 100% !important;
-  /* width: 240px !important; */
-}
-
-.hero .full-width {
-  width: 100%;
-  height: 350px;
-}
-
-.hero .category {
-  color: #bababa;
-  text-transform: uppercase;
-  text-align: center;
-  width: 100%;
-}
-
-.hero .category_sub {
-  color: #515050;
-  text-transform: uppercase;
-  text-align: center;
-  width: 100%;
-}
-
-.hero .category_outline {
-  border: 0.5px solid #bababa;
-}
-
-/* Top Deals */
-.top-deals {
-  color: #1e1e1e;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 50.4px;
-  font-family: "Outfit";
-  text-align: center;
-}
-
-.topCard {
-  position: relative;
-  overflow: hidden;
-  /* transition: transform 0.1s ease, box-shadow 0.3s ease; */
-  margin: 5px 12px;
-  padding: 0 !important;
-  border-radius: 0px !important;
-}
-
-/* .topCard:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0);
-    border: 1px solid #304FFE;
-    cursor: pointer;
-} */
-
-.trending-badge {
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  width: 6rem;
-  background-color: #304ffe;
-  font-family: "Outfit";
-  color: #fff;
-  z-index: 2;
-  font-weight: 400;
-  border-radius: 5px;
-}
-
-.content-badge {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  z-index: 2;
-  font-weight: 600;
-  font-size: 20px;
-  white-space: nowrap;
-  line-height: 37.8px;
-  font-family: "Outfit";
-  text-align: center;
-}
-
-@media screen and (min-width: 999px) and (max-width: 1200px) {
-  .content-badge {
-    font-weight: 600;
-    font-size: 25px;
-  }
-  .trending-badge {
-    font-weight: 300;
-  }
-}
-
-/* Top Deals End */
-
-/* Banner  */
-
-.badgebordernone {
-  --bs-badge-border-radius: "none";
-  background-color: #304ffe;
-  color: #fff;
-}
-
-.card {
-  --bs-card-border-radius: "none";
-}
-
-.card_section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.banner_card {
-  background: url("../images/Dealslah_ecommerce\ 1.jpg") center center no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 200px !important;
-  color: rgb(0, 0, 0);
-  border: none !important;
-}
-
-.heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70%;
-  /* Set a height for vertical centering */
+.offer-price {
   font-size: 24px;
-  /* Adjust the font size as needed */
-  font-weight: bold;
-  /* Optional: to make the text bold */
-  color: #fff;
-}
-
-.commerce {
-  /* font-family: "Outfit"; */
-  font-size: 20px !important;
-  font-weight: 700;
-  line-height: 25.2px;
-  text-align: left;margin-top: 5px;
-}
-
-.commerce_content {
-  /* font-family: "Outfit"; */
-  font-size: 16px !important;
-  font-weight: 400;
-  line-height: 20.16px;
-}
-
-.commerce_amount {
-  /* font-family: "Outfit"; */
-  font-size: 20px !important;
-  font-weight: 700;
-  line-height: 25.2px;
   color: #304ffe;
+
+  font-weight: bold;
 }
 
-.commerce_price {
-  /* font-family: "Outfit"; */
-  font-size: 20px !important;
-  font-weight: 500;
-  line-height: 25.2px;
-  margin-bottom: 0 !important;
+.old-price {
+  text-decoration: line-through;
+  color: gray;
 }
 
-.commerce_price span {
-  /* font-family: "Outfit"; */
-  font-size: 20px !important;
-  font-weight: 700;
-  line-height: 25.2px;
-}
-
-.commerce_place {
-  /* font-family: "Outfit"; */
-  font-size: 18px !important;
-  font-weight: 500;
-  line-height: 30.24px;
-}
-
-.commerce_head {
-  /* font-family: "Outfit"; */
-  font-size: 24px !important;
-  font-weight: 600;
-  line-height: 37.8px;
-}
-
-.commerce_badge {
-  background-color: #304ffe;
-  color: #fff;
-  /* font-family: Outfit; */
-  font-size: 18px !important;
-  font-weight: 500;
-}
-
-.seeMore-text {
-  color: #b1b1b1;
-  font-weight: 600px;
-  font-size: 18px;
-  line-height: 30.24px;
-  /* font-family: "Outfit"; */
-}
-
-.commerce_badge2 {
-  position: relative;
-  /* Enable positioning for the badge */
-  display: inline-block;
-}
-
-.badge_image {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #304ffe;
-  /* Badge background color *
-      color: white; /* Badge text color */
-  padding: 5px 10px;
-  /* Padding around the text */
-  border-radius: 5px;
-  /* Rounded corners */
-  font-size: 14px;
-  color: #fff;
-  width: auto;
-  /* Set to auto or a specific width if needed */
+.btn-deal {
   height: 30px;
 }
 
-.commerce_card {
-  /* height: 326px; */
-  max-width: 100%;
+.product-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.action-buttons {
+  margin-top: 15px;
+}
+
+.action-buttons .btn {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.product-images-section {
+  margin-top: 30px;
+}
+
+.product-images-section .product-images-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn-download {
+  background-color: #304ffe;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.product-image-thumbnail {
+  background-image: url("../images/carousel.png");
+  background-size: cover;
+  background-position: center;
+  height: 150px;
   display: flex;
-  flex-direction: column;
-  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.product-discription {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: solid 1px #304ffe;
 }
 
-@media (min-width: 992px) {
-  .commerce_card {
-    width: 822px;
-  }
-}
-
-.commerce_badge2 img {
-  max-height: 100%;
-  width: auto;
-  border-radius: 3px;
-}
-
-.commerce_content {
-  font-size: 18px;
-  /* Set font size greater than 16px */
-  display: -webkit-box;
-  /* For WebKit browsers */
-  -webkit-line-clamp: 3;
-  /* Number of lines to show before truncation */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  /* Hide overflow content */
-  text-overflow: ellipsis;
-  /* Add ellipsis at the end */
-  line-height: 1.2;
-  /* Adjust line height if needed */
+.product-image {
+  background-image: url("../images/carousel.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
 }

@@ -76,7 +76,7 @@
                         </ul>
                     </form>
 
-                    <div class="d-flex flex-column d-xl-none ps-5">
+                    <div class="d-flex flex-column d-xl-none">
                         <a class="nav-link active" href="home">HOME</a>
                         <a class="nav-link" href="menu1">MENU1</a>
                         <a class="nav-link" href="menu2">MENU2</a>
@@ -85,7 +85,7 @@
                     </div>
 
                     <!-- Expanded View (Large Screens) -->
-                    <div class="d-none d-xl-flex justify-content-center align-items-center">
+                    <div class="d-none d-xl-flex justify-content-center align-items-center large-inputs">
                         <div>
                             <input type="text" class="form-control " placeholder="ITEM NAME"
                                 style="border: 1px solid #b1b1b1; padding-top: 12px  ;padding-bottom: 12px; width: 350px" />
@@ -476,14 +476,12 @@
     <!-- Hero Seaction End -->
 
     <!-- Top Deals -->
-      <div class="container">
-      <h5 class="pt-4 pb-3 top-deals">Top Deals</h5>
-      <div
-        class="row pb-2 owl-carousel carousel_cards_slide owl-theme"
-      >
+<div class="container mb-5">
+      <h5 class="pt-5 pb-4 top-deals">Top Deals</h5>
+      <div class="row pb-2 owl-carousel carousel_cards_slide owl-theme">
         <div class="item col mb-3">
           <a href="#" style="text-decoration: none">
-            <div class="card topCard  h-100">
+            <div class="card topCard h-100">
               <div>
                 <span class="badge trending-badge">TRENDING</span>
                 <img
@@ -492,556 +490,914 @@
                   alt="card_image"
                 />
               </div>
-              <p class="content-badge text-center">RUNNING</p>
+              <p class="content-badge text-center">TRENDING</p>
             </div>
           </a>
         </div>
         <div class="item col mb-3">
-            <a href="#" style="text-decoration: none">
-              <div class="card topCard card-img-top1 h-100">
-                <div>
-                  <span class="badge trending-badge">TRENDING</span>
-                  <img
-                    src="assets/images/card_image_1.webp"
-                    class="img-fluid"
-                    alt="card_image"
-                  />
-                </div>
-                <p class="content-badge">RUNNING</p>
+          <a href="#" style="text-decoration: none">
+            <div class="card topCard card-img-top1 h-100">
+              <div>
+                <span class="badge trending-badge">POPULAR</span>
+                <img
+                  src="assets/images/card_image_2.webp"
+                  class="img-fluid"
+                  alt="card_image"
+                />
               </div>
-            </a>
-          </div>
-          <div class="item col mb-3">
-            <a href="#" style="text-decoration: none">
-              <div class="card topCard card-img-top1 h-100">
-                <div>
-                  <span class="badge trending-badge">TRENDING</span>
-                  <img
-                    src="assets/images/card_image_1.webp"
-                    class="img-fluid"
-                    alt="card_image"
-                  />
-                </div>
-                <p class="content-badge">RUNNING</p>
+              <p class="content-badge">POPULAR</p>
+            </div>
+          </a>
+        </div>
+        <div class="item col mb-3">
+          <a href="#" style="text-decoration: none">
+            <div class="card topCard card-img-top1 h-100">
+              <div>
+                <span class="badge trending-badge">EARLY BIRD</span>
+                <img
+                  src="assets/images/card_image_3.webp"
+                  class="img-fluid"
+                  alt="card_image"
+                />
               </div>
-            </a>
-          </div>
-          <div class="item col mb-3">
-            <a href="#" style="text-decoration: none">
-              <div class="card topCard card-img-top1 h-100">
-                <div>
-                  <span class="badge trending-badge">TRENDING</span>
-                  <img
-                    src="assets/images/card_image_1.webp"
-                    class="img-fluid"
-                    alt="card_image"
-                  />
-                </div>
-                <p class="content-badge">RUNNING</p>
+              <p class="content-badge">EARLY BIRD</p>
+            </div>
+          </a>
+        </div>
+        <div class="item col mb-3">
+          <a href="#" style="text-decoration: none">
+            <div class="card topCard card-img-top1 h-100">
+              <div>
+                <span class="badge trending-badge">LAST CHANCE</span>
+                <img
+                  src="assets/images/card_image_4.webp"
+                  class="img-fluid"
+                  alt="card_image"
+                />
               </div>
-            </a>
-          </div>
-          <div class="item col mb-3">
-            <a href="#" style="text-decoration: none">
-              <div class="card topCard card-img-top1 h-100">
-                <div>
-                  <span class="badge trending-badge">TRENDING</span>
-                  <img
-                    src="assets/images/card_image_1.webp"
-                    class="img-fluid"
-                    alt="card_image"
-                  />
-                </div>
-                <p class="content-badge">RUNNING</p>
+              <p class="content-badge">LAST CHANCE</p>
+            </div>
+          </a>
+        </div>
+        <div class="item col mb-3">
+          <a href="#" style="text-decoration: none">
+            <div class="card topCard card-img-top1 h-100">
+              <div>
+                <span class="badge trending-badge">LIMITED TIME</span>
+                <img
+                  src="assets/images/card_image_5.webp"
+                  class="img-fluid"
+                  alt="card_image"
+                />
               </div>
-            </a>
-          </div>
+              <p class="content-badge">LIMITED TIME</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
      <!-- Top Deals End -->
 
      <!-- Banner -->
-      <div class="container mt-4 ">
+    <div class="container mt-4">
+      <div class="row mb-5">
+        <div class="col-md-4 col-12 p-1 card_section mb-3">
+          <div class="card h-100 banner_card">
+            <div class="d-flex justify-content-end align-items-center p-2">
+              <span class="badge bg-primary text-light badgebordernone"
+                >Trending</span
+              >
+            </div>
+            <div
+              class="heading d-flex justify-content-center align-items-center"
+            >
+              BANNER
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12 p-1 card_section mb-3">
+          <div class="card h-100 banner_card">
+            <div class="d-flex justify-content-end align-items-center p-2">
+              <span class="badge bg-primary text-light badgebordernone">
+                Trending
+              </span>
+            </div>
+            <div
+              class="heading d-flex justify-content-center align-items-center"
+            >
+              BANNER
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 p-1 card_section mb-3">
+          <div class="card h-100 banner_card">
+            <div class="d-flex justify-content-end align-items-center p-2">
+              <span class="badge bg-primary text-light badgebordernone">
+                Trending
+              </span>
+            </div>
+            <div
+              class="heading d-flex justify-content-center align-items-center"
+            >
+              BANNER
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 p-1 card_section mb-3">
+          <div class="card h-100 banner_card">
+            <div class="d-flex justify-content-end align-items-center p-2">
+              <span class="badge bg-primary text-light badgebordernone">
+                Trending
+              </span>
+            </div>
+            <div
+              class="heading d-flex justify-content-center align-items-center"
+            >
+              BANNER
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 p-1 card_section mb-3">
+          <div class="card h-100 banner_card">
+            <div class="d-flex justify-content-end align-items-center p-2">
+              <span class="badge bg-primary text-light badgebordernone">
+                Trending
+              </span>
+            </div>
+            <div
+              class="heading d-flex justify-content-center align-items-center"
+            >
+              BANNER
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 p-1 card_section mb-3">
+          <div class="card h-100 banner_card">
+            <div class="d-flex justify-content-end align-items-center p-2">
+              <span class="badge bg-primary text-light badgebordernone">
+                Trending
+              </span>
+            </div>
+            <div
+              class="heading d-flex justify-content-center align-items-center"
+            >
+              BANNER
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5 px-0">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="commerce_head">CATEGORY DEALS</p>
+          <p class="seeMore-text">SEE MORE&nbsp;></p>
+        </div>
         <div class="row m-0">
-            <div class="col-md-4 col-12 p-1 card_section mb-3">
-                <div class="card h-100 banner_card">
-                    <div class="d-flex justify-content-end align-items-center p-2">
-                        <span class="badge bg-primary text-light badgebordernone">Trending</span>
+          <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 230px"
+                  >
+                    <img
+                      src="./assets/images/dea.jpg"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                  <p class="commerce p-0 mb-0" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-0">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
                     </div>
-                    <div class="heading d-flex justify-content-center align-items-center">BANNER</div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
                 </div>
+              </div>
             </div>
-
-            <div class=" col-md-4 col-12 p-1 card_section mb-3">
-                <div class="card h-100 banner_card">
-                    <div class="d-flex justify-content-end align-items-center p-2"> <span
-                            class="badge bg-primary text-light badgebordernone">
-                            Trending
-                        </span></div>
-                    <div class="heading d-flex justify-content-center align-items-center">BANNER</div>
+          </div>
+          <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 230px"
+                  >
+                    <img
+                      src="./assets/images/dea.jpg"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
                 </div>
-            </div>
-            <div class=" col-md-4 col-12 p-1 card_section mb-3">
-                <div class="card h-100 banner_card">
-                    <div class="d-flex justify-content-end align-items-center p-2"> <span
-                            class="badge bg-primary text-light badgebordernone">
-                            Trending
-                        </span></div>
-                    <div class="heading d-flex justify-content-center align-items-center">BANNER</div>
+                <div class="col-lg-7 col-12">
+                  <p class="commerce p-0 mb-0" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-0">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
                 </div>
+              </div>
             </div>
-            <div class=" col-md-4 col-12 p-1 card_section mb-3">
-                <div class="card h-100 banner_card">
-                    <div class="d-flex justify-content-end align-items-center p-2"> <span
-                            class="badge bg-primary text-light badgebordernone">
-                            Trending
-                        </span></div>
-                    <div class="heading d-flex justify-content-center align-items-center">BANNER</div>
-                </div>
-            </div>
-            <div class=" col-md-4 col-12 p-1 card_section mb-3">
-                <div class="card h-100 banner_card">
-                    <div class="d-flex justify-content-end align-items-center p-2"> <span
-                            class="badge bg-primary text-light badgebordernone">
-                            Trending
-                        </span></div>
-                    <div class="heading d-flex justify-content-center align-items-center">BANNER</div>
-                </div>
-            </div>
-            <div class=" col-md-4 col-12 p-1 card_section mb-3">
-                <div class="card h-100 banner_card">
-                    <div class="d-flex justify-content-end align-items-center p-2"> <span
-                            class="badge bg-primary text-light badgebordernone">
-                            Trending
-                        </span></div>
-                    <div class="heading d-flex justify-content-center align-items-center">BANNER</div>
-                </div>
-            </div>
+          </div>
         </div>
-
-        <div class="container mt-5 mb-5 px-0">
-            <div class="d-flex justify-content-between align-items-center">
-                <p class="commerce_head">CATEGORY DEALS</p>
-                <p class="seeMore-text">SEE MORE&nbsp;></p>
-            </div>
-            <div class="row m-0">
-                <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
-                    <div class="card h-100 commerce_card">
-                        <div class="row m-0">
-                            <div class="col-md-5 col-12 p-0 m-0">
-                                <div class="commerce_badge2">
-                                    <img src="./assets/images/images.jpg" alt="images" class="img-fluid">
-                                    <span class="badge_image">10% OFF</span>
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-12">
-                                <p class="commerce">e-commerce Logistics</p>
-                                <p>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                </p>
-                                <p class="commerce_content">
-                                    Enjoy a flat 5% discount in e-commerce logistics from Trucklah! We ensure delivery
-                                    on time, every time. Trucklah, moving made easy.
-                                </p>
-                                <div class=" d-flex justify-content-between">
-                                    <div class="commerce_amount">$65</div>
-                                    <div class="">
-                                        <p class="badge commerce_badge">DEALSLAHB 5</p>
-                                    </div>
-                                </div>
-                                <p class="commerce_price">Regular Price &nbsp;&nbsp; <span>$70</span></p>
-                                <p style="color: #304FFE;">
-                                    <i class="fa fa-location"></i> &nbsp;&nbsp; <span
-                                        class="commerce_place">Singapore</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
-                    <div class="card h-100 commerce_card">
-                        <div class="row m-0">
-                            <div class="col-md-5 col-12 p-0 m-0">
-                                <div class="commerce_badge2">
-                                    <img src="./assets/images/images.jpg" alt="images" class="img-fluid">
-                                    <span class="badge_image">10% OFF</span>
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-12">
-                                <p class="commerce">e-commerce Logistics</p>
-                                <p>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                </p>
-                                <p class="commerce_content">
-                                    Enjoy a flat 5% discount in e-commerce logistics from Trucklah! We ensure delivery
-                                    on time, every time. Trucklah, moving made easy.
-                                </p>
-                                <div class=" d-flex justify-content-between">
-                                    <div class="commerce_amount">$65</div>
-                                    <div class="">
-                                        <p class="badge commerce_badge">DEALSLAHB 5</p>
-                                    </div>
-                                </div>
-                                <p class="commerce_price">Regular Price &nbsp;&nbsp; <span>$70</span></p>
-                                <p style="color: #304FFE;">
-                                    <i class="fa fa-location"></i> &nbsp;&nbsp; <span
-                                        class="commerce_place">Singapore</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
+      </div>
+      <div class="container mb-5 px-0">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="commerce_head">CATEGORY DEALS</p>
+          <p class="seeMore-text">SEE MORE&nbsp;></p>
         </div>
-
-        <div class="container mb-5  px-0">
-            <div class="d-flex justify-content-between align-items-center">
-                <p class="commerce_head">CATEGORY DEALS</p>
-                <p class="seeMore-text">SEE MORE&nbsp;></p>
-            </div>
-            <div class="row m-0">
-                <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
-                    <div class="card h-100 commerce_card">
-                        <div class="row m-0">
-                            <div class="col-md-5 col-12 p-0 m-0">
-                                <div class="commerce_badge2">
-                                    <img src="./assets/images/images.jpg" alt="images" class="img-fluid">
-                                    <span class="badge_image">10% OFF</span>
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-12">
-                                <p class="commerce">e-commerce Logistics</p>
-                                <p>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                </p>
-                                <p class="commerce_content">
-                                    Enjoy a flat 5% discount in e-commerce logistics from Trucklah! We ensure delivery
-                                    on time, every time. Trucklah, moving made easy.
-                                </p>
-                                <div class=" d-flex justify-content-between">
-                                    <div class="commerce_amount">$65</div>
-                                    <div class="">
-                                        <p class="badge commerce_badge">DEALSLAHB 5</p>
-                                    </div>
-                                </div>
-                                <p class="commerce_price">Regular Price &nbsp;&nbsp; <span>$70</span></p>
-                                <p style="color: #304FFE;">
-                                    <i class="fa fa-location"></i> &nbsp;&nbsp; <span
-                                        class="commerce_place">Singapore</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row m-0">
+          <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 230px"
+                  >
+                    <img
+                      src="./assets/images/dea.jpg"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
                 </div>
-                <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
-                    <div class="card h-100 commerce_card">
-                        <div class="row m-0">
-                            <div class="col-md-5 col-12 p-0 m-0">
-                                <div class="commerce_badge2">
-                                    <img src="./assets/images/images.jpg" alt="images" class="img-fluid">
-                                    <span class="badge_image">10% OFF</span>
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-12">
-                                <p class="commerce">e-commerce Logistics</p>
-                                <p>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                </p>
-                                <p class="commerce_content">
-                                    Enjoy a flat 5% discount in e-commerce logistics from Trucklah! We ensure delivery
-                                    on time, every time. Trucklah, moving made easy.
-                                </p>
-                                <div class=" d-flex justify-content-between">
-                                    <div class="commerce_amount">$65</div>
-                                    <div class="">
-                                        <p class="badge commerce_badge">DEALSLAHB 5</p>
-                                    </div>
-                                </div>
-                                <p class="commerce_price">Regular Price &nbsp;&nbsp; <span>$70</span></p>
-                                <p style="color: #304FFE;">
-                                    <i class="fa fa-location"></i> &nbsp;&nbsp; <span
-                                        class="commerce_place">Singapore</span>
-                                </p>
-                            </div>
-                        </div>
+                <div class="col-lg-7 col-12">
+                  <p class="commerce p-0 mb-0" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-0">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
                     </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
                 </div>
-
-
+              </div>
             </div>
+          </div>
+          <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 230px"
+                  >
+                    <img
+                      src="./assets/images/dea.jpg"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                  <p class="commerce p-0 mb-0" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-0">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="container mb-5 px-0">
-            <div class="d-flex justify-content-between align-items-center">
-                <p class="commerce_head">CATEGORY DEALS</p>
-                <p class="seeMore-text">SEE MORE&nbsp;></p>
-            </div>
-            <div class="row m-0">
-                <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
-                    <div class="card h-100 commerce_card">
-                        <div class="row m-0">
-                            <div class="col-md-5 col-12 p-0 m-0">
-                                <div class="commerce_badge2">
-                                    <img src="./assets/images/images.jpg" alt="images" class="img-fluid">
-                                    <span class="badge_image">10% OFF</span>
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-12">
-                                <p class="commerce">e-commerce Logistics</p>
-                                <p>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                </p>
-                                <p class="commerce_content">
-                                    Enjoy a flat 5% discount in e-commerce logistics from Trucklah! We ensure delivery
-                                    on time, every time. Trucklah, moving made easy.
-                                </p>
-                                <div class=" d-flex justify-content-between">
-                                    <div class="commerce_amount">$65</div>
-                                    <div class="">
-                                        <p class="badge commerce_badge">DEALSLAHB 5</p>
-                                    </div>
-                                </div>
-                                <p class="commerce_price">Regular Price &nbsp;&nbsp; <span>$70</span></p>
-                                <p style="color: #304FFE;">
-                                    <i class="fa fa-location"></i> &nbsp;&nbsp; <span
-                                        class="commerce_place">Singapore</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
-                    <div class="card h-100 commerce_card">
-                        <div class="row m-0">
-                            <div class="col-md-5 col-12 p-0 m-0">
-                                <div class="commerce_badge2">
-                                    <img src="./assets/images/images.jpg" alt="images" class="img-fluid">
-                                    <span class="badge_image">10% OFF</span>
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-12">
-                                <p class="commerce">e-commerce Logistics</p>
-                                <p>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                </p>
-                                <p class="commerce_content">
-                                    Enjoy a flat 5% discount in e-commerce logistics from Trucklah! We ensure delivery
-                                    on time, every time. Trucklah, moving made easy.
-                                </p>
-                                <div class=" d-flex justify-content-between">
-                                    <div class="commerce_amount">$65</div>
-                                    <div class="">
-                                        <p class="badge commerce_badge">DEALSLAHB 5</p>
-                                    </div>
-                                </div>
-                                <p class="commerce_price">Regular Price &nbsp;&nbsp; <span>$70</span></p>
-                                <p style="color: #304FFE;">
-                                    <i class="fa fa-location"></i> &nbsp;&nbsp; <span
-                                        class="commerce_place">Singapore</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
+      </div>
+      <div class="container mb-5 px-0">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="commerce_head">CATEGORY DEALS</p>
+          <p class="seeMore-text">SEE MORE&nbsp;></p>
         </div>
-
-        <div class="container mb-5 px-0">
-            <div class="d-flex justify-content-between align-items-center">
-                <p class="commerce_head">CATEGORY DEALS</p>
-                <p class="seeMore-text">SEE MORE&nbsp;></p>
-            </div>
-            <div class="row m-0">
-                <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
-                    <div class="card h-100 commerce_card">
-                        <div class="row m-0">
-                            <div class="col-md-5 col-12 p-0 m-0">
-                                <div class="commerce_badge2">
-                                    <img src="./assets/images/images.jpg" alt="images" class="img-fluid">
-                                    <span class="badge_image">10% OFF</span>
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-12">
-                                <p class="commerce">e-commerce Logistics</p>
-                                <p>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                </p>
-                                <p class="commerce_content">
-                                    Enjoy a flat 5% discount in e-commerce logistics from Trucklah! We ensure delivery
-                                    on time, every time. Trucklah, moving made easy.
-                                </p>
-                                <div class=" d-flex justify-content-between">
-                                    <div class="commerce_amount">$65</div>
-                                    <div class="">
-                                        <p class="badge commerce_badge">DEALSLAHB 5</p>
-                                    </div>
-                                </div>
-                                <p class="commerce_price">Regular Price &nbsp;&nbsp; <span>$70</span></p>
-                                <p style="color: #304FFE;">
-                                    <i class="fa fa-location"></i> &nbsp;&nbsp; <span
-                                        class="commerce_place">Singapore</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row m-0">
+          <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 230px"
+                  >
+                    <img
+                      src="./assets/images/dea.jpg"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
                 </div>
-                <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
-                    <div class="card h-100 commerce_card">
-                        <div class="row m-0">
-                            <div class="col-md-5 col-12 p-0 m-0">
-                                <div class="commerce_badge2">
-                                    <img src="./assets/images/images.jpg" alt="images" class="img-fluid">
-                                    <span class="badge_image">10% OFF</span>
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-12">
-                                <p class="commerce">e-commerce Logistics</p>
-                                <p>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                </p>
-                                <p class="commerce_content">
-                                    Enjoy a flat 5% discount in e-commerce logistics from Trucklah! We ensure delivery
-                                    on time, every time. Trucklah, moving made easy.
-                                </p>
-                                <div class=" d-flex justify-content-between">
-                                    <div class="commerce_amount">$65</div>
-                                    <div class="">
-                                        <p class="badge commerce_badge">DEALSLAHB 5</p>
-                                    </div>
-                                </div>
-                                <p class="commerce_price">Regular Price &nbsp;&nbsp; <span>$70</span></p>
-                                <p style="color: #304FFE;">
-                                    <i class="fa fa-location"></i> &nbsp;&nbsp; <span
-                                        class="commerce_place">Singapore</span>
-                                </p>
-                            </div>
-                        </div>
+                <div class="col-lg-7 col-12">
+                  <p class="commerce p-0 mb-0" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-0">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
                     </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
                 </div>
-
-
+              </div>
             </div>
+          </div>
+          <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 230px"
+                  >
+                    <img
+                      src="./assets/images/dea.jpg"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                  <p class="commerce p-0 mb-0" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-0">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div class="container mb-5 px-0">
-            <div class="d-flex justify-content-between align-items-center">
-                <p class="commerce_head">CATEGORY DEALS</p>
-                <p class="seeMore-text">SEE MORE&nbsp;></p>
-            </div>
-            <div class="row m-0">
-                <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
-                    <div class="card h-100 commerce_card">
-                        <div class="row m-0">
-                            <div class="col-md-5 col-12 p-0 m-0">
-                                <div class="commerce_badge2">
-                                    <img src="./assets/images/images.jpg" alt="images" class="img-fluid">
-                                    <span class="badge_image">10% OFF</span>
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-12">
-                                <p class="commerce">e-commerce Logistics</p>
-                                <p>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                </p>
-                                <p class="commerce_content">
-                                    Enjoy a flat 5% discount in e-commerce logistics from Trucklah! We ensure delivery
-                                    on time, every time. Trucklah, moving made easy.
-                                </p>
-                                <div class=" d-flex justify-content-between">
-                                    <div class="commerce_amount">$65</div>
-                                    <div class="">
-                                        <p class="badge commerce_badge">DEALSLAHB 5</p>
-                                    </div>
-                                </div>
-                                <p class="commerce_price">Regular Price &nbsp;&nbsp; <span>$70</span></p>
-                                <p style="color: #304FFE;">
-                                    <i class="fa fa-location"></i> &nbsp;&nbsp; <span
-                                        class="commerce_place">Singapore</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
-                    <div class="card h-100 commerce_card">
-                        <div class="row m-0">
-                            <div class="col-md-5 col-12 p-0 m-0">
-                                <div class="commerce_badge2">
-                                    <img src="./assets/images/images.jpg" alt="images" class="img-fluid">
-                                    <span class="badge_image">10% OFF</span>
-                                </div>
-                            </div>
-                            <div class="col-md-7 col-12">
-                                <p class="commerce">e-commerce Logistics</p>
-                                <p>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                    <span style="color: yellow;"><i class="fa fa-star"></i></span>
-                                </p>
-                                <p class="commerce_content">
-                                    Enjoy a flat 5% discount in e-commerce logistics from Trucklah! We ensure delivery
-                                    on time, every time. Trucklah, moving made easy.
-                                </p>
-                                <div class=" d-flex justify-content-between">
-                                    <div class="commerce_amount">$65</div>
-                                    <div class="">
-                                        <p class="badge commerce_badge">DEALSLAHB 5</p>
-                                    </div>
-                                </div>
-                                <p class="commerce_price">Regular Price &nbsp;&nbsp; <span>$70</span></p>
-                                <p style="color: #304FFE;">
-                                    <i class="fa fa-location"></i> &nbsp;&nbsp; <span
-                                        class="commerce_place">Singapore</span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      </div>
+      <div class="container mb-5 px-0">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="commerce_head">CATEGORY DEALS</p>
+          <p class="seeMore-text">SEE MORE&nbsp;></p>
         </div>
-
+        <div class="row m-0">
+          <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 230px"
+                  >
+                    <img
+                      src="./assets/images/dea.jpg"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                  <p class="commerce p-0 mb-0" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-0">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 230px"
+                  >
+                    <img
+                      src="./assets/images/dea.jpg"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                  <p class="commerce p-0 mb-0" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-0">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5 px-0">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="commerce_head">CATEGORY DEALS</p>
+          <p class="seeMore-text">SEE MORE&nbsp;></p>
+        </div>
+        <div class="row m-0">
+          <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 230px"
+                  >
+                    <img
+                      src="./assets/images/dea.jpg"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                  <p class="commerce p-0 mb-0" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-0">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 230px"
+                  >
+                    <img
+                      src="./assets/images/dea.jpg"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                  <p class="commerce p-0 mb-0" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-0">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <i class="fa-solid fa-location-dot" aria-hidden="true"></i> -->
+        </div>
+      </div>
     </div>
       <!-- Banner End -->
 
