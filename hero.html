@@ -34,6 +34,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
     />
+
+    <!-- Bootstrap Icon -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   </head>
 
   <body>
@@ -48,13 +51,13 @@
                 </div>
 
                <!-- Off-canvas Button for Mobile View -->
-               <div class="d-flex align-items-center mb-1 d-md-none">
+               <div class="d-flex align-items-end mb-1 d-md-none">
                 <button class="navbar-toggler offcanvas-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCategory" aria-controls="offcanvasCategory">
-                    <span>Category</span>
+                    <span>Category</span>&nbsp;<i class="bi bi-caret-down-fill"></i>
                 </button>
             </div>
 
-                <div class="d-flex align-items-center mb-1">
+                <div class="d-flex align-items-end mb-1">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -122,67 +125,270 @@
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-              <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#hardwareSubmenu" aria-expanded="false" aria-controls="hardwareSubmenu">
-                  HARDWARE
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary d-flex align-items-center dropdown-toggle no-arrow"
+                style="border-bottom: none;"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/Electronics Icons 1.svg"
+                  alt="Icon"
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                  "
+                />
+                <p
+                  class="category ps-2 mt-3"
+                  style="border-left: 0.5px solid #bababa"
+                >
+                  Hardware
+                </p>
               </a>
-              <div class="collapse" id="hardwareSubmenu">
-                  <ul class="list-unstyled ps-3">
-                      <li><a href="#" class="nav-link">STORAGE DEVICES</a></li>
-                      <li><a href="#" class="nav-link">INPUT DEVICES</a></li>
-                      <li><a href="#" class="nav-link">OUTPUT DEVICES</a></li>
-                  </ul>
-              </div>
-      
-              <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#softwareSubmenu" aria-expanded="false" aria-controls="softwareSubmenu">
-                SOFTWARE
-            </a>
-            <div class="collapse" id="softwareSubmenu">
-                <ul class="list-unstyled ps-3">
-                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Accounting Software</a></li>
-                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Graphics Software</a></li>
-                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Freeware</a></li>
-                </ul>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Storage devices</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#">Input devices</a>
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Output devices</a
+                  >
+                </li>
+              </ul>
             </div>
-              <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#computerSubmenu" aria-expanded="false" aria-controls="computerSubmenu">
-                  Computer
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/Restaurants Icons 1.svg"
+                  alt="Icon"
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                  "
+                />
+                <p
+                  class="category ps-2 mt-3"
+                  style="border-left: 0.5px solid #bababa"
+                >
+                Software
+                </p>
               </a>
-              <div class="collapse" id="computerSubmenu">
-                  <ul class="list-unstyled ps-3">
-                      <li><a href="#" class="nav-link" style="text-transform: uppercase;">Desktops</a></li>
-                      <li><a href="#" class="nav-link" style="text-transform: uppercase;">Monitors</a></li>
-                      <li><a href="#" class="nav-link" style="text-transform: uppercase;">Accessories</a></li>
-                  </ul>
-              </div>
-      
-              <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#laptopSubmenu" aria-expanded="false" aria-controls="laptopSubmenu">
-                LAPTOPS
-            </a>
-            <div class="collapse" id="laptopSubmenu">
-                <ul class="list-unstyled ps-3">
-                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">HP</a></li>
-                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Lenovo</a></li>
-                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Dell</a></li>
-                </ul>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item category_sub" href="#">Accounting Software</a>
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Graphics Software</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#">Freeware</a>
+                </li>
+              </ul>
             </div>
-              <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#serverSubmenu" aria-expanded="false" aria-controls="serverSubmenu">
-                SERVER PARTS
-            </a>
-            <div class="collapse" id="serverSubmenu">
-                <ul class="list-unstyled ps-3">
-                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Motherboard</a></li>
-                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Central Processing Unit</a></li>
-                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Random Access Memory</a></li>
-                </ul>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/Beauty Icons 1.svg"
+                  alt="Icon"
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                  "
+                />
+                <p
+                  class="category ps-2 mt-3"
+                  style="border-left: 0.5px solid #bababa"
+                >
+                Computer
+                </p>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item category_sub" href="#">Desktops</a>
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#">Monitors</a>
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#">Accessories</a>
+                </li>
+              </ul>
             </div>
-              <a href="#" class="nav-link" data-bs-toggle="collapse" data-bs-target="#microsoftSubmenu" aria-expanded="false" aria-controls="microsoftSubmenu">
-                MICROSOFT OFFICE
-            </a>
-            <div class="collapse" id="microsoftSubmenu">
-                <ul class="list-unstyled ps-3">
-                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Word</a></li>
-                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">Excel</a></li>
-                    <li><a href="#" class="nav-link" style="text-transform: uppercase;">PowerPoint</a></li>
-                </ul>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/Education Icons 1.svg"
+                  alt="Icon"
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                  "
+                />
+                <p
+                  class="category ps-2 mt-3"
+                  style="border-left: 0.5px solid #bababa"
+                >
+                Laptops
+                </p>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item category_sub" href="#">HP</a>
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Lenovo</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Dell</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/Groceries Icons 1.svg"
+                  alt="Icon"
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                  "
+                />
+                <p
+                  class="category ps-2 mt-3"
+                  style="border-left: 0.5px solid #bababa"
+                >
+                Server Parts
+                </p>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Motherboard</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Central Processing Unit</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Random Access Memory</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/Wellness Icons 1.svg"
+                  alt="Icon"
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                  "
+                />
+                <p
+                  class="category ps-2 mt-3"
+                  style="border-left: 0.5px solid #bababa"
+                >
+                Microsoft Office
+                </p>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Word</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Excel</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#">PowerPoint</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-center no-arrow"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <p class="category mt-3">SHOW ALL CATEGORY</p>
+              </a>
             </div>
           </div>
       </div>

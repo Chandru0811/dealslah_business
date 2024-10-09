@@ -346,14 +346,14 @@
   height: 350px;
 }
 
-.hero .category {
+.category {
   color: #bababa;
   text-transform: uppercase;
   text-align: center;
   width: 100%;
 }
 
-.hero .category_sub {
+.category_sub {
   color: #515050;
   text-transform: uppercase;
   text-align: center;
