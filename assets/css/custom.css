@@ -18,6 +18,28 @@
   padding: 0 8px;
 }
 
+/* Header  */
+
+.offcanvas-toggler {
+  background-color: #304ffe;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+/* Customize submenu links */
+.offcanvas-body .collapse .nav-link {
+  padding-left: 20px; /* Indent submenu items */
+  color: #6c757d; /* Submenu text color */
+}
+
+.offcanvas-body .collapse .nav-link:hover {
+  color: #007bff; /* Change color on hover */
+}
+
 .navbar-subbrand {
   color: #1e1e1e;
   font-weight: 600;
@@ -313,55 +335,47 @@
 
 /* Hero Section */
 
-.hero .btn-secondary.dropdown-toggle {
+/* Hero Section  */
+
+.btn-secondary.dropdown-toggle {
   background-color: #fff;
   color: #000;
   padding: 10px 20px;
   font-size: 16px;
-  /* border: none; */
   border: 0.5px solid #bababa;
-  /* border-bottom: none; */
   height: 50px;
-  /* width: 300px; */
   width: 100%;
   border-radius: 0;
 }
 
-.hero .btn-secondary.dropdown-toggle:hover {
+.btn-secondary.dropdown-toggle:hover {
   background-color: #fff;
   color: #000;
 }
 
-.hero .no-arrow::after {
+.no-arrow::after {
   display: none;
 }
 
-.hero .dropdown-menu {
+.dropdown-menu {
   width: 100% !important;
-  /* width: 240px !important; */
 }
 
-.hero .full-width {
+.full-width {
   width: 100%;
-  height: 350px;
 }
 
 .category {
   color: #bababa;
-  text-transform: uppercase;
   text-align: center;
   width: 100%;
+  text-transform: uppercase;
 }
 
 .category_sub {
   color: #515050;
+    text-align: center;
   text-transform: uppercase;
-  text-align: center;
-  width: 100%;
-}
-
-.hero .category_outline {
-  border: 0.5px solid #bababa;
 }
 
 /* Top Deals */
@@ -475,7 +489,8 @@
   font-size: 20px !important;
   font-weight: 700;
   line-height: 25.2px;
-  text-align: left;margin-top: 5px;
+  text-align: left;
+  margin-top: 5px;
 }
 
 .commerce_content {

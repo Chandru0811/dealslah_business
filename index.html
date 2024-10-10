@@ -45,7 +45,15 @@
                     <a class="navbar-headbrand text-center">DEALSLAH</a>
                     <p class="navbar-subbrand mb-0">Business</p>
                 </div>
-                <div class="d-flex align-items-center mb-1">
+
+               <!-- Off-canvas Button for Mobile View -->
+               <div class="d-flex align-items-end mb-1 d-md-none">
+                <button class="navbar-toggler offcanvas-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCategory" aria-controls="offcanvasCategory">
+                    <span>Category</span>&nbsp;<i class="fa-solid fa-angle-down"></i>
+                </button>
+            </div>
+
+                <div class="d-flex align-items-end mb-1">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -76,7 +84,7 @@
                         </ul>
                     </form>
 
-                    <div class="d-flex flex-column d-xl-none">
+                    <div class="d-flex flex-column d-xl-none ps-5">
                         <a class="nav-link active" href="home">HOME</a>
                         <a class="nav-link" href="menu1">MENU1</a>
                         <a class="nav-link" href="menu2">MENU2</a>
@@ -85,7 +93,7 @@
                     </div>
 
                     <!-- Expanded View (Large Screens) -->
-                    <div class="d-none d-xl-flex justify-content-center align-items-center large-inputs">
+                    <div class="d-none d-xl-flex justify-content-center align-items-center">
                         <div>
                             <input type="text" class="form-control " placeholder="ITEM NAME"
                                 style="border: 1px solid #b1b1b1; padding-top: 12px  ;padding-bottom: 12px; width: 350px" />
@@ -107,25 +115,12 @@
             </div>
         </nav>
 
-        <nav class="nav pb-2 d-none d-xl-flex">
-            <div class="horizontal-line"></div>
-            <div class="container d-flex ps-5">
-                <a class="nav-link active" href="home">HOME</a>
-                <a class="nav-link" href="#">MENU1</a>
-                <a class="nav-link" href="#">MENU2</a>
-                <a class="nav-link" href="#">MENU3</a>
-                <a class="nav-link" href="#">MENU4</a>
-            </div>
-            <div class="horizontal-line"></div>
-        </nav>
-    </section>
-    <!-- Header End  -->
-
-    <!-- Hero Seactio Start -->
-     <section class="hero mt-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-12 col-12">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCategory" aria-labelledby="offcanvasCategoryLabel">
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasCategoryLabel">CATEGORY MENU</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
             <div class="dropdown">
               <a
                 class="btn btn-secondary d-flex align-items-center dropdown-toggle no-arrow"
@@ -392,8 +387,296 @@
               </a>
             </div>
           </div>
+      </div>
+      
 
-          <div class="col-lg-8 col-md-12 col-12">
+        <nav class="nav pb-2 d-none d-xl-flex">
+            <div class="horizontal-line"></div>
+            <div class="container d-flex ps-5">
+                <a class="nav-link active" href="home">HOME</a>
+                <a class="nav-link" href="#">MENU1</a>
+                <a class="nav-link" href="#">MENU2</a>
+                <a class="nav-link" href="#">MENU3</a>
+                <a class="nav-link" href="#">MENU4</a>
+            </div>
+            <div class="horizontal-line"></div>
+        </nav>
+    </section>
+    <!-- Header End  -->
+
+    <!-- Hero Seactio Start -->
+     <section class="hero mt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12 d-none d-md-block">
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary d-flex align-items-center dropdown-toggle no-arrow"
+                style="border-bottom: none;"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/Electronics Icons 1.svg"
+                  alt="Icon"
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                  "
+                />
+                <p
+                  class="category ps-2 mt-3"
+                  style="border-left: 0.5px solid #bababa"
+                >
+                  Hardware
+                </p>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Storage devices</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#">Input devices</a>
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Output devices</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/Restaurants Icons 1.svg"
+                  alt="Icon"
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                  "
+                />
+                <p
+                  class="category ps-2 mt-3"
+                  style="border-left: 0.5px solid #bababa"
+                >
+                Software
+                </p>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item category_sub" href="#">Accounting Software</a>
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Graphics Software</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#">Freeware</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/Beauty Icons 1.svg"
+                  alt="Icon"
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                  "
+                />
+                <p
+                  class="category ps-2 mt-3"
+                  style="border-left: 0.5px solid #bababa"
+                >
+                Computer
+                </p>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item category_sub" href="#">Apple</a>
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#">HP</a>
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#">Dell</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/Education Icons 1.svg"
+                  alt="Icon"
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                  "
+                />
+                <p
+                  class="category ps-2 mt-3"
+                  style="border-left: 0.5px solid #bababa"
+                >
+                Laptops
+                </p>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item category_sub" href="#">HP</a>
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Lenovo</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Dell</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/Groceries Icons 1.svg"
+                  alt="Icon"
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                  "
+                />
+                <p
+                  class="category ps-2 mt-3"
+                  style="border-left: 0.5px solid #bababa"
+                >
+                Server Parts
+                </p>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Motherboard</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Central Processing Unit</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Random Access Memory</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                style="border-bottom: none;"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="./assets/images/Wellness Icons 1.svg"
+                  alt="Icon"
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    margin-top: 5px;
+                  "
+                />
+                <p
+                  class="category ps-2 mt-3"
+                  style="border-left: 0.5px solid #bababa"
+                >
+                Microsoft Office
+                </p>
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Word</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#"
+                    >Excel</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item category_sub" href="#">PowerPoint</a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <a
+                class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-center no-arrow"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <p class="category mt-3">SHOW ALL CATEGORY</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-8 col-12">
             <div
               id="carouselExampleCaptions"
               class="carousel slide"
@@ -1515,10 +1798,10 @@
     <!-- Footer End  -->
 
 
-    <script
-      src="https://kit.fontawesome.com/5b8838406b.js"
-      crossorigin="anonymous"
-    ></script>
+ <script
+    src="https://kit.fontawesome.com/5b8838406b.js"
+    crossorigin="anonymous"
+  ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
