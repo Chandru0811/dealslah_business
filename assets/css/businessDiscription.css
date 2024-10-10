@@ -46,8 +46,18 @@ body {
   .btn-download {
     background-color: #304FFE;
     color: white;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     border-radius: 5px;
+  }
+  .btn-action-primary {
+    color: #304FFE; 
+    border-color: #304FFE;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn-action-primary:hover {
+    background-color: #304FFE; 
+    color: white; 
   }
   
   .product-image-thumbnail {
