@@ -1,88 +1,106 @@
 body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .offer-price {
-    font-size: 24px;
-    color: #304FFE;
+  font-family: Arial, sans-serif;
+}
 
-    font-weight: bold;
-  }
-  
-  .old-price {
-    text-decoration: line-through;
-    color: gray;
-  }
-  
-  .btn-deal {
-    height: 30px;
-  }
-  
-  .product-description {
-    font-size: 14px;
-    color: #666;
-  }
-  
-  .action-buttons {
-    margin-top: 15px;
-  }
-  
-  .action-buttons .btn {
-    margin-right: 10px;
-    border-radius: 5px;
-  }
-  
-  .product-images-section {
-    margin-top: 30px;
-  }
-  
-  .product-images-section .product-images-title {
-    text-align: center;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .btn-download {
-    background-color: #304FFE;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-  }
-  
-  .product-image-thumbnail {
-    background-image: url('../images/carousel.png');
-    background-size: cover;
-    background-position: center;
-    height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-  .product-discription {
-    height: 30vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-size: 16px;
-    margin-bottom: 15px;
-    border: solid 1px #304FFE;
-  }
-  
-  .product-image {
-    background-image: url('../images/carousel.png');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
+.offer-price {
+  font-size: 24px;
+  color: #304ffe;
+
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.btn-deal {
+  height: 30px;
+}
+
+.product-description {
+  font-size: 14px;
+  color: #666;
+}
+
+.action-buttons {
+  margin-top: 15px;
+}
+
+.action-buttons .btn {
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.product-images-section {
+  margin-top: 30px;
+}
+
+.product-images-section .product-images-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.btn-download {
+  background-color: #304ffe;
+  color: white;
+  /* padding: 10px 20px; */
+  border-radius: 5px;
+  /* border: 2px solid transparent;  */
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.btn-download:hover {
+  background-color: transparent;
+  border-color: #304ffe;
+  color: #304ffe;
+}
+
+.btn-action-primary {
+  color: #304ffe;
+  border-color: #304ffe;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-action-primary:hover {
+  background-color: #304ffe;
+  color: white;
+}
+
+.product-image-thumbnail {
+  background-image: url("../images/carousel.png");
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.product-discription {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: solid 1px #304ffe;
+}
+
+.product-image {
+  background-image: url("../images/carousel.png");
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
