@@ -398,6 +398,17 @@
   border-radius: 0px !important;
 }
 
+.topCard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
 /* .topCard:hover {
     transform: translateY(-2px);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0);
@@ -421,7 +432,7 @@
 .content-badge {
   position: absolute;
   top: 90%;
-  left: 35%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   z-index: 2;
