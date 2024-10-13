@@ -625,7 +625,7 @@
   /* Adjust line height if needed */
 }
 .icon-circle {
-  width: 40px;
+  width: 50px;
   height: 40px;
   background-color: #007bff !important; /* Blue background */
   display: flex;
