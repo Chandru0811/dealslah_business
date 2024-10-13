@@ -624,3 +624,18 @@
   line-height: 1.2;
   /* Adjust line height if needed */
 }
+.icon-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff !important; /* Blue background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.icon-circle i {
+  color: #ffffff ; /* White icon color */
+  font-size: 18px;
+}
