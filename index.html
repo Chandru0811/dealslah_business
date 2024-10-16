@@ -51,7 +51,7 @@
               <img
                 src="assets/images/Dealslah Business Logo this.png"
                 alt="header-logo"
-                class="img-fluid header-logo text-start"
+                class="img-fluid header-logo text-start header_logo_top"
                 width="160"
               />
             </a>
@@ -60,7 +60,7 @@
           <!-- Off-canvas Button for Mobile View -->
           <div class="d-flex align-items-end mb-1 d-md-none">
             <button
-              class="navbar-toggler offcanvas-toggler"
+              class="navbar-toggler offcanvas-toggler category_dropdown_header"
               type="button"
               data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasCategory"
@@ -96,7 +96,11 @@
                       type="text"
                       class="form-control mb-2 py-4 search_input"
                       placeholder="ITEM NAME"
-                      style="border: 1px solid #b1b1b1"
+                      style="
+                        border: 1px solid #b1b1b1;
+                        text-align: center;
+                        box-shadow: none;
+                      "
                     />
                   </div>
                   <div class="input-group">
@@ -104,7 +108,11 @@
                       aria-describedby="basic-addon1"
                       class="form-select py-4 text-center"
                       aria-label="Default select example"
-                      style="border: 1px solid #b1b1b1; border-right: 0px"
+                      style="
+                        border: 1px solid #b1b1b1;
+                        border-right: 0px;
+                        box-shadow: none;
+                      "
                     >
                       <option selected class="select-text">
                         SELECT CATEGORY
@@ -143,6 +151,7 @@
                     padding-bottom: 12px;
                     width: 350px;
                     box-shadow: none;
+                    text-align: center;
                   "
                 />
               </div>
@@ -158,6 +167,7 @@
                     width: 350px;
                     border-right: 0px;
                     box-shadow: none;
+                    text-align: center;
                   "
                 >
                   <option selected class="select-text">SELECT CATEGORY</option>
@@ -787,7 +797,7 @@
     <!-- Top Deals -->
     <div class="container mb-5">
       <h5 class="pt-5 pb-4 top-deals">TOP DEALS</h5>
-      <div class="row pb-2 owl-carousel carousel_cards_slide owl-theme">
+      <div class="row pb-2 owl-carousel carousel_cards_slide owl-theme m-0">
         <div class="item col mb-3">
           <a href="#" style="text-decoration: none">
             <div class="card topCard h-100">
@@ -869,7 +879,7 @@
 
     <!-- Banner -->
     <div class="container mt-4 px-4">
-      <div class="row mb-5">
+      <div class="row mb-5 m-0">
         <div class="col-md-4 col-12 p-1 card_section mb-3">
           <div class="card h-100 banner_card">
             <div class="d-flex justify-content-end align-items-center p-2">
@@ -1726,7 +1736,7 @@
     <!-- Footer Start  -->
     <section class="footer-conent">
       <div class="container">
-        <div class="row m-0 m-0">
+        <div class="row m-0">
           <div class="col-md-3 text-start mt-4">
             <div class="headings">
               <h5 class="footer-title">Dealslah Business</h5>

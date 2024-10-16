@@ -17,6 +17,17 @@
   line-height: 45.36px;
 }
 
+@media screen and (max-width: 555px) {
+  .category_dropdown_header {
+    font-size: 14px !important;
+  }
+}
+@media screen and (max-width: 786px) {
+  .header_logo_top {
+    padding: 0 2pc !important;
+  }
+}
+
 .deals_logo {
   margin-left: -2.5rem;
 }
