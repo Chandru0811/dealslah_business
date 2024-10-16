@@ -1,1289 +1,1961 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dealslah Business</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dealslah Business</title>
+    <link rel="icon" href="./assets/images/favicon.ico" />
 
-  <link rel="icon" href="./assets/images/favicon.ico" />
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Afacad:wght@400..700&display=swap" rel="stylesheet" />
+    <!-- CSS Files -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/custom.css" />
 
-  <!-- CSS Files -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="./assets/css/custom.css" />
+    <!-- AOS Animation CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+  </head>
 
-  <!-- AOS Animation CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
-</head>
-
-<body>
-
-  <!-- Header Start  -->
-  <section class="header">
-    <nav id="NavBar" class="navbar container mainNav navbar-expand-xl navbar-light"
-      style="background-color: #fff !important">
-      <div class="container-fluid d-flex align-items-center justify-content-between">
-        <div class="deals_logo">
-          <a href="/">
-            <img src="assets/images/Dealslah Business Logo this.png" 
-              alt="header-logo" 
-              class="img-fluid header-logo text-start"
-              width="160" />
-          </a>
-        </div>
-
-        <!-- Off-canvas Button for Mobile View -->
-        <div class="d-flex align-items-end mb-1 d-md-none">
-          <button class="navbar-toggler offcanvas-toggler" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasCategory" aria-controls="offcanvasCategory">
-            <span>CATEGORY</span>&nbsp;<i class="fa-solid fa-angle-down"></i>
-          </button>
-        </div>
-
-        <div class="d-flex align-items-end mb-1">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarText">
-          <!-- Collapsed View (Small Screens) -->
-          <form class="mx-auto d-xl-none">
-            <ul class="navbar-nav pt-2" id="default-search">
-              <li class="nav-item mb-2">
-                <div>
-                  <input type="text" class="form-control mb-2 py-4" placeholder="ITEM NAME"
-                    style="border: 1px solid #b1b1b1" />
-                </div>
-                <div class="input-group">
-                  <select aria-describedby="basic-addon1" class="form-select py-4" aria-label="Default select example"
-                    style="border: 1px solid #b1b1b1;border-right: 0px;">
-                    <option selected class="select-text">SELECT CATEGORY</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                  </select>
-                  <!-- <span class="input-group-text" id="basic-addon1"> <i
-                                            class="fa-solid fa-magnifying-glass search-icon" size="100"></i></span> -->
-                </div>
-              </li>
-            </ul>
-          </form>
-
-          <div class="d-flex flex-column d-xl-none ps-5">
-            <a class="nav-link active" href="home">HOME</a>
-            <a class="nav-link" href="menu1">MENU1</a>
-            <a class="nav-link" href="menu2">MENU2</a>
-            <a class="nav-link" href="menu3">MENU3</a>
-            <a class="nav-link" href="menu4">MENU4</a>
+  <body>
+    <!-- Header Start  -->
+    <section class="header">
+      <nav
+        id="NavBar"
+        class="navbar container mainNav navbar-expand-xl navbar-light"
+        style="background-color: #fff !important"
+      >
+        <div
+          class="container-fluid d-flex align-items-center justify-content-between"
+        >
+          <div class="deals_logo">
+            <a href="/">
+              <img
+                src="assets/images/Dealslah Business Logo this.png"
+                alt="header-logo"
+                class="img-fluid header-logo text-start"
+                width="160"
+              />
+            </a>
           </div>
 
-          <!-- Expanded View (Large Screens) -->
-          <div class="d-none d-xl-flex justify-content-center align-items-center">
-            <div>
-              <input type="text" class="form-control " placeholder="ITEM NAME"
-                style="border: 1px solid #b1b1b1; padding-top: 12px  ;padding-bottom: 12px; width: 350px" />
-            </div>
-            <div class="input-group">
-              <select aria-describedby="basic-addon1" class="form-select" aria-label="Default select example"
-                style="border: 1px solid #b1b1b1;padding-top: 12px  ;padding-bottom: 12px; width: 350px;border-right: 0px;">
-                <option selected class="select-text">SELECT CATEGORY</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <span class="input-group-text d-flex justify-content-center align-items-center" id="basic-addon1"
-                style="width: 50px; height: 50px;">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-              </span>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCategory" aria-labelledby="offcanvasCategoryLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasCategoryLabel">CATEGORY MENU</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="dropdown">
-          <a class="btn btn-secondary d-flex align-items-center dropdown-toggle no-arrow" style="border-bottom: none;"
-            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="./assets/images/Electronics Icons 1.svg" alt="Icon" style="
-                    width: 30px;
-                    height: 30px;
-                    margin-right: 10px;
-                    margin-top: 5px;
-                  " />
-            <p class="category ps-2 mt-3" style="border-left: 0.5px solid #bababa">
-              Hardware
-            </p>
-          </a>
-
-          <ul class="dropdown-menu mx-3">
-            <li>
-              <a class="dropdown-item category_sub" href="#">Storage devices</a>
-            </li>
-            <li>
-              <a class="dropdown-item category_sub" href="#">Input devices</a>
-            </li>
-            <li>
-              <a class="dropdown-item category_sub" href="#">Output devices</a>
-            </li>
-          </ul>
-        </div>
-        <div class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
-            style="border-bottom: none;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="./assets/images/Restaurants Icons 1.svg" alt="Icon" style="
-                    width: 30px;
-                    height: 30px;
-                    margin-right: 10px;
-                    margin-top: 5px;
-                  " />
-            <p class="category ps-2 mt-3" style="border-left: 0.5px solid #bababa">
-              Software
-            </p>
-          </a>
-
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item category_sub" href="#">Accounting Software</a>
-            </li>
-            <li>
-              <a class="dropdown-item category_sub" href="#">Graphics Software</a>
-            </li>
-            <li>
-              <a class="dropdown-item category_sub" href="#">Freeware</a>
-            </li>
-          </ul>
-        </div>
-        <div class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
-            style="border-bottom: none;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="./assets/images/Beauty Icons 1.svg" alt="Icon" style="
-                    width: 30px;
-                    height: 30px;
-                    margin-right: 10px;
-                    margin-top: 5px;
-                  " />
-            <p class="category ps-2 mt-3" style="border-left: 0.5px solid #bababa">
-              Computer
-            </p>
-          </a>
-
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item category_sub" href="#">Desktops</a>
-            </li>
-            <li>
-              <a class="dropdown-item category_sub" href="#">Monitors</a>
-            </li>
-            <li>
-              <a class="dropdown-item category_sub" href="#">Accessories</a>
-            </li>
-          </ul>
-        </div>
-        <div class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
-            style="border-bottom: none;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="./assets/images/Education Icons 1.svg" alt="Icon" style="
-                    width: 30px;
-                    height: 30px;
-                    margin-right: 10px;
-                    margin-top: 5px;
-                  " />
-            <p class="category ps-2 mt-3" style="border-left: 0.5px solid #bababa">
-              Laptops
-            </p>
-          </a>
-
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item category_sub" href="#">HP</a>
-            </li>
-            <li>
-              <a class="dropdown-item category_sub" href="#">Lenovo</a>
-            </li>
-            <li>
-              <a class="dropdown-item category_sub" href="#">Dell</a>
-            </li>
-          </ul>
-        </div>
-        <div class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
-            style="border-bottom: none;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="./assets/images/Groceries Icons 1.svg" alt="Icon" style="
-                    width: 30px;
-                    height: 30px;
-                    margin-right: 10px;
-                    margin-top: 5px;
-                  " />
-            <p class="category ps-2 mt-3" style="border-left: 0.5px solid #bababa">
-              Server Parts
-            </p>
-          </a>
-
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item category_sub" href="#">Motherboard</a>
-            </li>
-            <li>
-              <a class="dropdown-item category_sub" href="#">Central Processing Unit</a>
-            </li>
-            <li>
-              <a class="dropdown-item category_sub" href="#">Random Access Memory</a>
-            </li>
-          </ul>
-        </div>
-        <div class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
-            style="border-bottom: none;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="./assets/images/Wellness Icons 1.svg" alt="Icon" style="
-                    width: 30px;
-                    height: 30px;
-                    margin-right: 10px;
-                    margin-top: 5px;
-                  " />
-            <p class="category ps-2 mt-3" style="border-left: 0.5px solid #bababa">
-              Microsoft Office
-            </p>
-          </a>
-
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item category_sub" href="#">Word</a>
-            </li>
-            <li>
-              <a class="dropdown-item category_sub" href="#">Excel</a>
-            </li>
-            <li>
-              <a class="dropdown-item category_sub" href="#">PowerPoint</a>
-            </li>
-          </ul>
-        </div>
-        <div class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-center no-arrow"
-            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <p class="category mt-3">SHOW ALL CATEGORY</p>
-          </a>
-        </div>
-      </div>
-    </div>
-
-
-    <nav class="nav pb-2 d-none d-xl-flex">
-      <div class="horizontal-line"></div>
-      <div class="container d-flex ps-5">
-        <a class="nav-link active" href="home">HOME</a>
-        <a class="nav-link" href="#">MENU1</a>
-        <a class="nav-link" href="#">MENU2</a>
-        <a class="nav-link" href="#">MENU3</a>
-        <a class="nav-link" href="#">MENU4</a>
-      </div>
-      <div class="horizontal-line"></div>
-    </nav>
-  </section>
-  <!-- Header End  -->
-
-  <!-- Hero Seactio Start -->
-  <section class="hero mt-2">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-5 col-12 d-flex align-items-stretch">
-          <div class="d-flex flex-column w-100">
-            <div class="dropdown">
-              <a class="btn btn-secondary d-flex align-items-center dropdown-toggle no-arrow"
-                style="border-bottom: none;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <!-- <div class="icon-circle">
-                  <i class="fas fa-tools"></i>
-                </div> -->
-                <p class="category ps-2 mt-3" style="border-left: 0.5px #bababa">
-                  Hardware
-                </p>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item category_sub" href="#">Storage devices</a></li>
-                <li><a class="dropdown-item category_sub" href="#">Input devices</a></li>
-                <li><a class="dropdown-item category_sub" href="#">Output devices</a></li>
-              </ul>
-            </div>
-
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
-                style="border-bottom: none;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <!-- <div class="icon-circle">
-                  <i class="fas fa-laptop-code"></i>
-                </div> -->
-                <p class="category ps-2 mt-3" style="border-left: 0.5px #bababa">
-                  Software
-                </p>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item category_sub" href="#">Accounting Software</a></li>
-                <li><a class="dropdown-item category_sub" href="#">Graphics Software</a></li>
-                <li><a class="dropdown-item category_sub" href="#">Freeware</a></li>
-              </ul>
-            </div>
-
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
-                style="border-bottom: none;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <!-- <div class="icon-circle">
-                  <i class="fas fa-desktop"></i>
-                </div> -->
-                <p class="category ps-2 mt-3" style="border-left: 0.5px #bababa">
-                  Computer
-                </p>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item category_sub" href="#">Desktops</a></li>
-                <li><a class="dropdown-item category_sub" href="#">Monitors</a></li>
-                <li><a class="dropdown-item category_sub" href="#">Accessories</a></li>
-              </ul>
-            </div>
-
-            <!-- Repeat the above structure for other dropdowns, changing the icon and text as needed -->
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
-                style="border-bottom: none;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <!-- <div class="icon-circle">
-                  <i class="fas fa-laptop"></i>
-                </div> -->
-                <p class="category ps-2 mt-3" style="border-left: 0.5px #bababa">
-                  Laptops
-                </p>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item category_sub" href="#">HP</a></li>
-                <li><a class="dropdown-item category_sub" href="#">Lenovo</a></li>
-                <li><a class="dropdown-item category_sub" href="#">Dell</a></li>
-              </ul>
-            </div>
-
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
-                style="border-bottom: none;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <!-- <div class="icon-circle">
-                  <i class="fas fa-server"></i>
-                </div> -->
-                <p class="category ps-2 mt-3" style="border-left: 0.5px #bababa">
-                  Server Parts
-                </p>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item category_sub" href="#">Motherboard</a></li>
-                <li><a class="dropdown-item category_sub" href="#">CPU</a></li>
-                <li><a class="dropdown-item category_sub" href="#">RAM</a></li>
-              </ul>
-            </div>
-
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
-                style="border-bottom: none;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <!-- <div class="icon-circle">
-                  <i class="fas fa-microsoft"></i>
-                </div> -->
-                <p class="category ps-2 mt-3" style="border-left: 0.5px #bababa">
-                  Microsoft Office
-                </p>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item category_sub" href="#">Word</a></li>
-                <li><a class="dropdown-item category_sub" href="#">Excel</a></li>
-                <li><a class="dropdown-item category_sub" href="#">PowerPoint</a></li>
-              </ul>
-            </div>
-
-            <div class="dropdown">
-              <a class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-center no-arrow"
-                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <p class="category mt-3">SHOW ALL CATEGORIES</p>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-8 col-md-7 col-12 d-flex align-items-stretch">
-          <div class="w-100">
-            <div id="carouselExampleCaptions" class="carousel slide h-100" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                  aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                  aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                  aria-label="Slide 3"></button>
-              </div>
-              <div class="carousel-inner h-100">
-                <div class="carousel-item active h-100">
-                  <img src="./assets/images/Slider 2.png" class="d-block w-100 h-100" alt="..."
-                    style="object-fit: cover;" />
-                </div>
-                <div class="carousel-item h-100">
-                  <img src="./assets/images/Slider 3.png" class="d-block w-100 h-100" alt="..."
-                    style="object-fit: cover;" />
-                </div>
-                <div class="carousel-item h-100">
-                  <img src="./assets/images/Slider 5.png" class="d-block w-100 h-100" alt="..."
-                    style="object-fit: cover;" />
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Hero Seaction End -->
-
-  <!-- Top Deals -->
-  <div class="container mb-5">
-    <h5 class="pt-5 pb-4 top-deals">TOP DEALS</h5>
-    <div class="row pb-2 owl-carousel carousel_cards_slide owl-theme">
-      <div class="item col mb-3">
-        <a href="#" style="text-decoration: none">
-          <div class="card topCard h-100">
-            <div>
-              <span class="badge trending-badge">5% off</span>
-              <img src="assets/images/Python.svg" class="img-fluid" alt="card_image" />
-            </div>
-            <p class="content-badge text-start">Python</p>
-          </div>
-        </a>
-      </div>
-      <div class="item col mb-3">
-        <a href="#" style="text-decoration: none">
-          <div class="card topCard card-img-top1 h-100">
-            <div>
-              <span class="badge trending-badge">10% off</span>
-              <img src="assets/images/Google.svg" class="img-fluid" alt="card_image" />
-            </div>
-            <p class="content-badge">Google Work Space</p>
-          </div>
-        </a>
-      </div>
-      <div class="item col mb-3">
-        <a href="#" style="text-decoration: none">
-          <div class="card topCard card-img-top1 h-100">
-            <div>
-              <span class="badge trending-badge">10% off</span>
-              <img src="assets/images/Java.svg" class="img-fluid" alt="card_image" />
-            </div>
-            <p class="content-badge">Java</p>
-          </div>
-        </a>
-      </div>
-      <div class="item col mb-3">
-        <a href="#" style="text-decoration: none">
-          <div class="card topCard card-img-top1 h-100">
-            <div>
-              <span class="badge trending-badge">5% off</span>
-              <img src="assets/images/Microsoft.svg" class="img-fluid" alt="card_image" />
-            </div>
-            <p class="content-badge">Microsoft Azure</p>
-          </div>
-        </a>
-      </div>
-      <div class="item col mb-3">
-        <a href="#" style="text-decoration: none">
-          <div class="card topCard card-img-top1 h-100">
-            <div>
-              <span class="badge trending-badge">15% off</span>
-              <img src="assets/images/AWS.svg" class="img-fluid w-100" alt="card_image" />
-            </div>
-            <p class="content-badge">AWS</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <!-- Top Deals End -->
-
-  <!-- Banner -->
-  <div class="container mt-4">
-    <div class="row mb-5">
-      <div class="col-md-4 col-12 p-1 card_section mb-3">
-        <div class="card h-100 banner_card">
-          <div class="d-flex justify-content-end align-items-center p-2">
-            <span class="badge bg-primary badgebordernone fw-normal">
-              Trending
-            </span>
-          </div>
-
-          <div class="heading d-flex justify-content-center align-items-center">
-            BANNER
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4 col-12 p-1 card_section mb-3">
-        <div class="card h-100 banner_card">
-          <div class="d-flex justify-content-end align-items-center p-2">
-            <span class="badge bg-primary fw-normal badgebordernone">
-              Best Seller
-            </span>
-          </div>
-          <div class="heading d-flex justify-content-center align-items-center">
-            BANNER
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-12 p-1 card_section mb-3">
-        <div class="card h-100 banner_card">
-          <div class="d-flex justify-content-end align-items-center p-2">
-            <span class="badge bg-primary fw-normal badgebordernone">
-              Our Choice
-            </span>
-          </div>
-          <div class="heading d-flex justify-content-center align-items-center">
-            BANNER
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-12 p-1 card_section mb-3">
-        <div class="card h-100 banner_card">
-          <div class="d-flex justify-content-end align-items-center p-2">
-            <span class="badge bg-primary fw-normal badgebordernone">
-              Latest
-            </span>
-          </div>
-          <div class="heading d-flex justify-content-center align-items-center">
-            BANNER
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-12 p-1 card_section mb-3">
-        <div class="card h-100 banner_card">
-          <div class="d-flex justify-content-end align-items-center p-2">
-            <span class="badge bg-primary fw-normal badgebordernone">
-              Trending
-            </span>
-          </div>
-          <div class="heading d-flex justify-content-center align-items-center">
-            BANNER
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4 col-12 p-1 card_section mb-3">
-        <div class="card h-100 banner_card">
-          <div class="d-flex justify-content-end align-items-center p-2">
-            <span class="badge bg-primary fw-normal badgebordernone">
-              Best Celler
-            </span>
-          </div>
-          <div class="heading d-flex justify-content-center align-items-center">
-            BANNER
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mb-5 px-0">
-      <div class="d-flex justify-content-between align-items-center">
-        <p class="commerce_head">CATEGORY DEALS</p>
-        <p class="seeMore-text">SEE MORE&nbsp;></p>
-      </div>
-      <div class="row m-0">
-        <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
-          <div class="card h-80 commerce_card">
-            <div class="row m-0">
-              <div class="col-lg-5 col-12 p-0 m-0 d-flex align-items-center">
-                <div class="commerce_badge2" style="position: relative; width: 100%;height: 250px">
-                  <img src="./assets/images/robot.png" alt="images" class="img-fluid w-100 h-100"
-                    style="object-fit: cover" />
-                  <span class="badge_image">10% OFF</span>
-                </div>
-              </div>
-              <div class="col-lg-7 col-12 ps-3 pb-2">
-                <p class="commerce p-0 mb-1" style="font-size: 1rem">
-                  e-commerce Logistics
-                </p>
-                <p class="p-0 mb-2">
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-regular fa-star"></i></span>
-                </p>
-                <p class="commerce_content" style="font-size: 0.9rem; line-height: 1.2rem">
-                  Enjoy a flat 5% discount in e-commerce logistics from
-                  Trucklah! We ensure delivery on time, every time. Trucklah,
-                  moving made easy.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <div class="commerce_amount" style="font-size: 1.2rem">
-                    $65
-                  </div>
-                  <div class="">
-                    <p class="badge commerce_badge" style="font-size: 0.85rem">
-                      DEALSLAHB 5
-                    </p>
-                  </div>
-                </div>
-                <p class="commerce_price" style="font-size: 0.85rem">
-                  Regular Price &nbsp;&nbsp;
-                  <span><s>$70</s></span>
-                </p>
-                <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
-                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                  &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
-          <div class="card h-80 commerce_card">
-            <div class="row m-0">
-              <div class="col-lg-5 col-12 p-0 m-0">
-                <div class="commerce_badge2" style="position: relative; width: 100%; height: 250px">
-                  <img src="./assets/images/robot.png" alt="images" class="img-fluid w-100 h-100"
-                    style="object-fit: cover" />
-                  <span class="badge_image">10% OFF</span>
-                </div>
-              </div>
-              <div class="col-lg-7 col-12 ps-3 pb-2">
-                <p class="commerce p-0 mb-1" style="font-size: 1rem">
-                  e-commerce Logistics
-                </p>
-                <p class="p-0 mb-2">
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-regular fa-star"></i></span>
-                </p>
-                <p class="commerce_content" style="font-size: 0.9rem; line-height: 1.2rem">
-                  Enjoy a flat 5% discount in e-commerce logistics from
-                  Trucklah! We ensure delivery on time, every time. Trucklah,
-                  moving made easy.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <div class="commerce_amount" style="font-size: 1.2rem">
-                    $65
-                  </div>
-                  <div class="">
-                    <p class="badge commerce_badge" style="font-size: 0.85rem">
-                      DEALSLAHB 5
-                    </p>
-                  </div>
-                </div>
-                <p class="commerce_price" style="font-size: 0.85rem">
-                  Regular Price &nbsp;&nbsp;
-                  <span><s>$70</s></span>
-                </p>
-                <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
-                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                  &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mb-5 px-0">
-      <div class="d-flex justify-content-between align-items-center">
-        <p class="commerce_head">CATEGORY DEALS</p>
-        <p class="seeMore-text">SEE MORE&nbsp;></p>
-      </div>
-      <div class="row m-0">
-        <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
-          <div class="card h-80 commerce_card">
-            <div class="row m-0">
-              <div class="col-lg-5 col-12 p-0 m-0">
-                <div class="commerce_badge2" style="position: relative; width: 100%; height: 250px">
-                  <img src="./assets/images/robot.png" alt="images" class="img-fluid w-100 h-100"
-                    style="object-fit: cover" />
-                  <span class="badge_image">10% OFF</span>
-                </div>
-              </div>
-              <div class="col-lg-7 col-12 ps-3 pb-2">
-                <p class="commerce p-0 mb-1" style="font-size: 1rem">
-                  e-commerce Logistics
-                </p>
-                <p class="p-0 mb-2">
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-regular fa-star"></i></span>
-                </p>
-                <p class="commerce_content" style="font-size: 0.9rem; line-height: 1.2rem">
-                  Enjoy a flat 5% discount in e-commerce logistics from
-                  Trucklah! We ensure delivery on time, every time. Trucklah,
-                  moving made easy.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <div class="commerce_amount" style="font-size: 1.2rem">
-                    $65
-                  </div>
-                  <div class="">
-                    <p class="badge commerce_badge" style="font-size: 0.85rem">
-                      DEALSLAHB 5
-                    </p>
-                  </div>
-                </div>
-                <p class="commerce_price" style="font-size: 0.85rem">
-                  Regular Price &nbsp;&nbsp;
-                  <span><s>$70</s></span>
-                </p>
-                <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
-                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                  &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
-          <div class="card h-80 commerce_card">
-            <div class="row m-0">
-              <div class="col-lg-5 col-12 p-0 m-0">
-                <div class="commerce_badge2" style="position: relative; width: 100%; height: 250px">
-                  <img src="./assets/images/robot.png" alt="images" class="img-fluid w-100 h-100"
-                    style="object-fit: cover" />
-                  <span class="badge_image">10% OFF</span>
-                </div>
-              </div>
-              <div class="col-lg-7 col-12 ps-3 pb-2">
-                <p class="commerce p-0 mb-1" style="font-size: 1rem">
-                  e-commerce Logistics
-                </p>
-                <p class="p-0 mb-2">
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-regular fa-star"></i></span>
-                </p>
-                <p class="commerce_content" style="font-size: 0.9rem; line-height: 1.2rem">
-                  Enjoy a flat 5% discount in e-commerce logistics from
-                  Trucklah! We ensure delivery on time, every time. Trucklah,
-                  moving made easy.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <div class="commerce_amount" style="font-size: 1.2rem">
-                    $65
-                  </div>
-                  <div class="">
-                    <p class="badge commerce_badge" style="font-size: 0.85rem">
-                      DEALSLAHB 5
-                    </p>
-                  </div>
-                </div>
-                <p class="commerce_price" style="font-size: 0.85rem">
-                  Regular Price &nbsp;&nbsp;
-                  <span><s>$70</s></span>
-                </p>
-                <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
-                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                  &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mb-5 px-0">
-      <div class="d-flex justify-content-between align-items-center">
-        <p class="commerce_head">CATEGORY DEALS</p>
-        <p class="seeMore-text">SEE MORE&nbsp;></p>
-      </div>
-      <div class="row m-0">
-        <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
-          <div class="card h-80 commerce_card">
-            <div class="row m-0">
-              <div class="col-lg-5 col-12 p-0 m-0">
-                <div class="commerce_badge2" style="position: relative; width: 100%; height: 250px">
-                  <img src="./assets/images/robot.png" alt="images" class="img-fluid w-100 h-100"
-                    style="object-fit: cover" />
-                  <span class="badge_image">10% OFF</span>
-                </div>
-              </div>
-              <div class="col-lg-7 col-12 ps-3 pb-2">
-                <p class="commerce p-0 mb-1" style="font-size: 1rem">
-                  e-commerce Logistics
-                </p>
-                <p class="p-0 mb-2">
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-regular fa-star"></i></span>
-                </p>
-                <p class="commerce_content" style="font-size: 0.9rem; line-height: 1.2rem">
-                  Enjoy a flat 5% discount in e-commerce logistics from
-                  Trucklah! We ensure delivery on time, every time. Trucklah,
-                  moving made easy.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <div class="commerce_amount" style="font-size: 1.2rem">
-                    $65
-                  </div>
-                  <div class="">
-                    <p class="badge commerce_badge" style="font-size: 0.85rem">
-                      DEALSLAHB 5
-                    </p>
-                  </div>
-                </div>
-                <p class="commerce_price" style="font-size: 0.85rem">
-                  Regular Price &nbsp;&nbsp;
-                  <span><s>$70</s></span>
-                </p>
-                <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
-                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                  &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
-          <div class="card h-80 commerce_card">
-            <div class="row m-0">
-              <div class="col-lg-5 col-12 p-0 m-0">
-                <div class="commerce_badge2" style="position: relative; width: 100%; height: 250px">
-                  <img src="./assets/images/robot.png" alt="images" class="img-fluid w-100 h-100"
-                    style="object-fit: cover" />
-                  <span class="badge_image">10% OFF</span>
-                </div>
-              </div>
-              <div class="col-lg-7 col-12 ps-3 pb-2">
-                <p class="commerce p-0 mb-1" style="font-size: 1rem">
-                  e-commerce Logistics
-                </p>
-                <p class="p-0 mb-2">
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-regular fa-star"></i></span>
-                </p>
-                <p class="commerce_content" style="font-size: 0.9rem; line-height: 1.2rem">
-                  Enjoy a flat 5% discount in e-commerce logistics from
-                  Trucklah! We ensure delivery on time, every time. Trucklah,
-                  moving made easy.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <div class="commerce_amount" style="font-size: 1.2rem">
-                    $65
-                  </div>
-                  <div class="">
-                    <p class="badge commerce_badge" style="font-size: 0.85rem">
-                      DEALSLAHB 5
-                    </p>
-                  </div>
-                </div>
-                <p class="commerce_price" style="font-size: 0.85rem">
-                  Regular Price &nbsp;&nbsp;
-                  <span><s>$70</s></span>
-                </p>
-                <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
-                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                  &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mb-5 px-0">
-      <div class="d-flex justify-content-between align-items-center">
-        <p class="commerce_head">CATEGORY DEALS</p>
-        <p class="seeMore-text">SEE MORE&nbsp;></p>
-      </div>
-      <div class="row m-0">
-        <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
-          <div class="card h-80 commerce_card">
-            <div class="row m-0">
-              <div class="col-lg-5 col-12 p-0 m-0">
-                <div class="commerce_badge2" style="position: relative; width: 100%; height: 250px">
-                  <img src="./assets/images/robot.png" alt="images" class="img-fluid w-100 h-100"
-                    style="object-fit: cover" />
-                  <span class="badge_image">10% OFF</span>
-                </div>
-              </div>
-              <div class="col-lg-7 col-12 ps-3 pb-2">
-                <p class="commerce p-0 mb-1" style="font-size: 1rem">
-                  e-commerce Logistics
-                </p>
-                <p class="p-0 mb-2">
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-regular fa-star"></i></span>
-                </p>
-                <p class="commerce_content" style="font-size: 0.9rem; line-height: 1.2rem">
-                  Enjoy a flat 5% discount in e-commerce logistics from
-                  Trucklah! We ensure delivery on time, every time. Trucklah,
-                  moving made easy.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <div class="commerce_amount" style="font-size: 1.2rem">
-                    $65
-                  </div>
-                  <div class="">
-                    <p class="badge commerce_badge" style="font-size: 0.85rem">
-                      DEALSLAHB 5
-                    </p>
-                  </div>
-                </div>
-                <p class="commerce_price" style="font-size: 0.85rem">
-                  Regular Price &nbsp;&nbsp;
-                  <span><s>$70</s></span>
-                </p>
-                <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
-                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                  &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
-          <div class="card h-80 commerce_card">
-            <div class="row m-0">
-              <div class="col-lg-5 col-12 p-0 m-0">
-                <div class="commerce_badge2" style="position: relative; width: 100%; height: 250px">
-                  <img src="./assets/images/robot.png" alt="images" class="img-fluid w-100 h-100"
-                    style="object-fit: cover" />
-                  <span class="badge_image">10% OFF</span>
-                </div>
-              </div>
-              <div class="col-lg-7 col-12 ps-3 pb-2">
-                <p class="commerce p-0 mb-1" style="font-size: 1rem">
-                  e-commerce Logistics
-                </p>
-                <p class="p-0 mb-2">
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-regular fa-star"></i></span>
-                </p>
-                <p class="commerce_content" style="font-size: 0.9rem; line-height: 1.2rem">
-                  Enjoy a flat 5% discount in e-commerce logistics from
-                  Trucklah! We ensure delivery on time, every time. Trucklah,
-                  moving made easy.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <div class="commerce_amount" style="font-size: 1.2rem">
-                    $65
-                  </div>
-                  <div class="">
-                    <p class="badge commerce_badge" style="font-size: 0.85rem">
-                      DEALSLAHB 5
-                    </p>
-                  </div>
-                </div>
-                <p class="commerce_price" style="font-size: 0.85rem">
-                  Regular Price &nbsp;&nbsp;
-                  <span><s>$70</s></span>
-                </p>
-                <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
-                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                  &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container mb-5 px-0">
-      <div class="d-flex justify-content-between align-items-center">
-        <p class="commerce_head">CATEGORY DEALS</p>
-        <p class="seeMore-text">SEE MORE&nbsp;></p>
-      </div>
-      <div class="row m-0">
-        <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
-          <div class="card h-80 commerce_card">
-            <div class="row m-0">
-              <div class="col-lg-5 col-12 p-0 m-0">
-                <div class="commerce_badge2" style="position: relative; width: 100%; height: 250px">
-                  <img src="./assets/images/robot.png" alt="images" class="img-fluid w-100 h-100"
-                    style="object-fit: cover" />
-                  <span class="badge_image">10% OFF</span>
-                </div>
-              </div>
-              <div class="col-lg-7 col-12 ps-3 pb-2">
-                <p class="commerce p-0 mb-1" style="font-size: 1rem">
-                  e-commerce Logistics
-                </p>
-                <p class="p-0 mb-2">
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-regular fa-star"></i></span>
-                </p>
-                <p class="commerce_content" style="font-size: 0.9rem; line-height: 1.2rem">
-                  Enjoy a flat 5% discount in e-commerce logistics from
-                  Trucklah! We ensure delivery on time, every time. Trucklah,
-                  moving made easy.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <div class="commerce_amount" style="font-size: 1.2rem">
-                    $65
-                  </div>
-                  <div class="">
-                    <p class="badge commerce_badge" style="font-size: 0.85rem">
-                      DEALSLAHB 5
-                    </p>
-                  </div>
-                </div>
-                <p class="commerce_price" style="font-size: 0.85rem">
-                  Regular Price &nbsp;&nbsp;
-                  <span><s>$70</s></span>
-                </p>
-                <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
-                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                  &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
-          <div class="card h-80 commerce_card">
-            <div class="row m-0">
-              <div class="col-lg-5 col-12 p-0 m-0">
-                <div class="commerce_badge2" style="position: relative; width: 100%; height: 250px">
-                  <img src="./assets/images/robot.png" alt="images" class="img-fluid w-100 h-100"
-                    style="object-fit: cover" />
-                  <span class="badge_image">10% OFF</span>
-                </div>
-              </div>
-              <div class="col-lg-7 col-12 ps-3 pb-2">
-                <p class="commerce p-0 mb-1" style="font-size: 1rem">
-                  e-commerce Logistics
-                </p>
-                <p class="p-0 mb-2">
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-solid fa-star"></i></span>
-                  <span style="color: #ffc200"><i class="fa-regular fa-star"></i></span>
-                </p>
-                <p class="commerce_content" style="font-size: 0.9rem; line-height: 1.2rem">
-                  Enjoy a flat 5% discount in e-commerce logistics from
-                  Trucklah! We ensure delivery on time, every time. Trucklah,
-                  moving made easy.
-                </p>
-                <div class="d-flex justify-content-between">
-                  <div class="commerce_amount" style="font-size: 1.2rem">
-                    $65
-                  </div>
-                  <div class="">
-                    <p class="badge commerce_badge" style="font-size: 0.85rem">
-                      DEALSLAHB 5
-                    </p>
-                  </div>
-                </div>
-                <p class="commerce_price" style="font-size: 0.85rem">
-                  Regular Price &nbsp;&nbsp;
-                  <span><s>$70</s></span>
-                </p>
-                <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
-                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
-                  &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <i class="fa-solid fa-location-dot" aria-hidden="true"></i> -->
-      </div>
-    </div>
-  </div>
-  <!-- Banner End -->
-
-  <!-- Footer Start  -->
-  <section class="footer-conent">
-    <div class="container">
-      <div class="row m-0 m-0">
-        <div class="col-md-3 text-start mt-4">
-          <div class="headings">
-            <h5 class="footer-title">Dealslah Business</h5>
-            <p class="text-start">
-              Top Money Saver Deals just for you. Exclusive deals, coupons, exciting offers that helps you stay within
-              the budget.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-2 text-start mt-4">
-          <div class="headings">
-            <h5 class="footer-title">Help</h5>
-          </div>
-          <div class="footer-links">
-            <div class="links2">
-              <a href="#" rel="noopener noreferrer" class="text-decoration-none"
-                style="font-size: 16px; color: #ffff">Blog</a>
-            </div>
-            <div class="links2">
-              <a href="#" rel="noopener noreferrer" class="text-decoration-none"
-                style="font-size: 16px; color: #ffff">Press</a>
-            </div>
-            <div class="links2">
-              <a href="contact_us" rel="noopener noreferrer" class="text-decoration-none"
-                style="font-size: 16px; color: #ffff">FAQ</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-2 text-start mt-4">
-          <div class="headings">
-            <h5 class="footer-title" style="white-space: nowrap">
-              CATEGORIES
-            </h5>
-          </div>
-          <div class="footer-links">
-            <div class="links2">
-              <a href="#" class="text-decoration-none" style="font-size: 16px; color: #ffff">
-                Education
-              </a>
-            </div>
-            <div class="links2">
-              <a href="#" class="text-decoration-none" style="font-size: 16px; color: #ffff">
-                Industrial
-              </a>
-            </div>
-            <div class="links2">
-              <a href="#" class="text-decoration-none" style="font-size: 16px; color: #ffff">
-                Electronics
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 mt-4">
-          <div class="footersearch d-flex px-4 gap-3">
-            <input name="email" class="form-control-sm form-control rounded" type="text">
-            <button class="btn footer-btn p-2">
-              SUBSCRIBE
+          <!-- Off-canvas Button for Mobile View -->
+          <div class="d-flex align-items-end mb-1 d-md-none">
+            <button
+              class="navbar-toggler offcanvas-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasCategory"
+              aria-controls="offcanvasCategory"
+            >
+              <span>CATEGORY</span>&nbsp;<i class="fa-solid fa-angle-down"></i>
             </button>
           </div>
-          <div class="text-start p-5">
-            <div class="d-flex flex-wrap my-2">
-              <a href="https://www.facebook.com/ecscloud/?_rdr" class="p-1 text-decoration-none text-white"
-                target="_blank">
-                <span class="mediaIconBg text-center">
-                  <i class="fa-brands fa-facebook-f" style="
-                              font-size: 22px;
-                              background: #faebd754;
-                              padding: 10px;
-                              width: 40px;
-                              border-radius: 5px;
-                            "></i>
-                </span>
-              </a>
 
-              <a href="https://x.com/ecscloudinfote2" class="p-1 text-decoration-none text-white" target="_blank">
-                <span class="mediaIconBg">
-                  <i class="fa-brands fa-x-twitter" style="
-                                font-size: 22px;
-                                background: #faebd754;
-                                padding: 10px;
-                                border-radius: 5px;
-                              "></i>
-                </span>
-              </a>
+          <div class="d-flex align-items-end mb-1">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarText"
+              aria-controls="navbarText"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarText"
+          >
+            <!-- Collapsed View (Small Screens) -->
+            <form class="mx-auto d-xl-none">
+              <ul class="navbar-nav pt-2" id="default-search">
+                <li class="nav-item mb-2">
+                  <div>
+                    <input
+                      type="text"
+                      class="form-control mb-2 py-4 search_input"
+                      placeholder="ITEM NAME"
+                      style="border: 1px solid #b1b1b1"
+                    />
+                  </div>
+                  <div class="input-group">
+                    <select
+                      aria-describedby="basic-addon1"
+                      class="form-select py-4 text-center"
+                      aria-label="Default select example"
+                      style="border: 1px solid #b1b1b1; border-right: 0px"
+                    >
+                      <option selected class="select-text">
+                        SELECT CATEGORY
+                      </option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <!-- <span class="input-group-text" id="basic-addon1"> <i
+                                            class="fa-solid fa-magnifying-glass search-icon" size="100"></i></span> -->
+                  </div>
+                </li>
+              </ul>
+            </form>
 
-              <a href="https://www.youtube.com/channel/UCIbNIWhaDnRs-gFuJ0sTNCQ/videos"
-                class="p-1 text-decoration-none text-white" target="_blank">
-                <span class="mediaIconBg">
-                  <i class="fa-brands fa-youtube" style="
-                                font-size: 22px;
-                                background: #faebd754;
-                                padding: 10px;
-                                border-radius: 5px;
-                              "></i>
-                </span>
-              </a>
-              <a href="https://www.instagram.com/ecscloudinfotech/" class="p-1 text-decoration-none text-white"
-                target="_blank">
-                <span class="mediaIconBg">
-                  <i class="fa-brands fa-instagram" style="
-                                font-size: 22px;
-                                background: #faebd754;
-                                padding: 10px;
-                                border-radius: 5px;
-                              "></i>
-                </span>
-              </a>
+            <div class="d-flex flex-column d-xl-none ps-5">
+              <a class="nav-link active" href="home">HOME</a>
+              <a class="nav-link" href="menu1">MENU1</a>
+              <a class="nav-link" href="menu2">MENU2</a>
+              <a class="nav-link" href="menu3">MENU3</a>
+              <a class="nav-link" href="menu4">MENU4</a>
+            </div>
 
-              <a href="https://www.linkedin.com/in/ecscloudinfotech/" class="p-1 text-decoration-none text-white"
-                target="_blank">
-                <span class="mediaIconBg">
-                  <i class="fa-brands fa-linkedin-in" style="
-                                font-size: 22px;
-                                background: #faebd754;
-                                padding: 10px;
-                                border-radius: 5px;
-                              "></i>
+            <!-- Expanded View (Large Screens) -->
+            <div
+              class="d-none d-xl-flex justify-content-center align-items-center"
+            >
+              <div>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="ITEM NAME"
+                  style="
+                    border: 1px solid #b1b1b1;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    width: 350px;
+                    box-shadow: none;
+                  "
+                />
+              </div>
+              <div class="input-group">
+                <select
+                  aria-describedby="basic-addon1"
+                  class="form-select"
+                  aria-label="Default select example"
+                  style="
+                    border: 1px solid #b1b1b1;
+                    padding-top: 12px;
+                    padding-bottom: 12px;
+                    width: 350px;
+                    border-right: 0px;
+                    box-shadow: none;
+                  "
+                >
+                  <option selected class="select-text">SELECT CATEGORY</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+                <span
+                  class="input-group-text d-flex justify-content-center align-items-center"
+                  id="basic-addon1"
+                  style="width: 50px; height: 50px"
+                >
+                  <i class="fa-solid fa-magnifying-glass search-icon"></i>
                 </span>
-              </a>
-              <a href="https://www.tiktok.com/@ecsaio" class="p-1 text-decoration-none text-white" target="_blank">
-                <span class="mediaIconBg">
-                  <i class="fa-brands fa-tiktok" style="
-                                font-size: 22px;
-                                background: #faebd754;
-                                padding: 10px;
-                                border-radius: 5px;
-                              "></i>
-                </span>
-              </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="offcanvasCategory"
+        aria-labelledby="offcanvasCategoryLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasCategoryLabel">
+            CATEGORY MENU
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary d-flex align-items-center dropdown-toggle no-arrow"
+              style="border-bottom: none"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./assets/images/Electronics Icons 1.svg"
+                alt="Icon"
+                style="
+                  width: 30px;
+                  height: 30px;
+                  margin-right: 10px;
+                  margin-top: 5px;
+                "
+              />
+              <p
+                class="category ps-2 mt-3"
+                style="border-left: 0.5px solid #bababa"
+              >
+                Hardware
+              </p>
+            </a>
+
+            <ul class="dropdown-menu mx-3">
+              <li>
+                <a class="dropdown-item category_sub" href="#"
+                  >Storage devices</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item category_sub" href="#">Input devices</a>
+              </li>
+              <li>
+                <a class="dropdown-item category_sub" href="#"
+                  >Output devices</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+              style="border-bottom: none"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./assets/images/Restaurants Icons 1.svg"
+                alt="Icon"
+                style="
+                  width: 30px;
+                  height: 30px;
+                  margin-right: 10px;
+                  margin-top: 5px;
+                "
+              />
+              <p
+                class="category ps-2 mt-3"
+                style="border-left: 0.5px solid #bababa"
+              >
+                Software
+              </p>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item category_sub" href="#"
+                  >Accounting Software</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item category_sub" href="#"
+                  >Graphics Software</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item category_sub" href="#">Freeware</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+              style="border-bottom: none"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./assets/images/Beauty Icons 1.svg"
+                alt="Icon"
+                style="
+                  width: 30px;
+                  height: 30px;
+                  margin-right: 10px;
+                  margin-top: 5px;
+                "
+              />
+              <p
+                class="category ps-2 mt-3"
+                style="border-left: 0.5px solid #bababa"
+              >
+                Computer
+              </p>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item category_sub" href="#">Desktops</a>
+              </li>
+              <li>
+                <a class="dropdown-item category_sub" href="#">Monitors</a>
+              </li>
+              <li>
+                <a class="dropdown-item category_sub" href="#">Accessories</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+              style="border-bottom: none"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./assets/images/Education Icons 1.svg"
+                alt="Icon"
+                style="
+                  width: 30px;
+                  height: 30px;
+                  margin-right: 10px;
+                  margin-top: 5px;
+                "
+              />
+              <p
+                class="category ps-2 mt-3"
+                style="border-left: 0.5px solid #bababa"
+              >
+                Laptops
+              </p>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item category_sub" href="#">HP</a>
+              </li>
+              <li>
+                <a class="dropdown-item category_sub" href="#">Lenovo</a>
+              </li>
+              <li>
+                <a class="dropdown-item category_sub" href="#">Dell</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+              style="border-bottom: none"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./assets/images/Groceries Icons 1.svg"
+                alt="Icon"
+                style="
+                  width: 30px;
+                  height: 30px;
+                  margin-right: 10px;
+                  margin-top: 5px;
+                "
+              />
+              <p
+                class="category ps-2 mt-3"
+                style="border-left: 0.5px solid #bababa"
+              >
+                Server Parts
+              </p>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item category_sub" href="#">Motherboard</a>
+              </li>
+              <li>
+                <a class="dropdown-item category_sub" href="#"
+                  >Central Processing Unit</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item category_sub" href="#"
+                  >Random Access Memory</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+              style="border-bottom: none"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./assets/images/Wellness Icons 1.svg"
+                alt="Icon"
+                style="
+                  width: 30px;
+                  height: 30px;
+                  margin-right: 10px;
+                  margin-top: 5px;
+                "
+              />
+              <p
+                class="category ps-2 mt-3"
+                style="border-left: 0.5px solid #bababa"
+              >
+                Microsoft Office
+              </p>
+            </a>
+
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item category_sub" href="#">Word</a>
+              </li>
+              <li>
+                <a class="dropdown-item category_sub" href="#">Excel</a>
+              </li>
+              <li>
+                <a class="dropdown-item category_sub" href="#">PowerPoint</a>
+              </li>
+            </ul>
+          </div>
+          <div class="dropdown">
+            <a
+              class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-center no-arrow"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <p class="category mt-3">SHOW ALL CATEGORY</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="nav pb-2 d-none d-xl-flex">
+        <div class="horizontal-line"></div>
+        <div class="container d-flex ps-5">
+          <a class="nav-link active" href="home">HOME</a>
+          <a class="nav-link" href="#">MENU1</a>
+          <a class="nav-link" href="#">MENU2</a>
+          <a class="nav-link" href="#">MENU3</a>
+          <a class="nav-link" href="#">MENU4</a>
+        </div>
+        <div class="horizontal-line"></div>
+      </nav>
+    </section>
+    <!-- Header End  -->
+
+    <!-- Hero Seactio Start -->
+    <section class="hero mt-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-5 col-12 d-flex align-items-stretch">
+            <div class="d-flex flex-column w-100">
+              <div class="dropdown">
+                <a
+                  class="btn btn-secondary d-flex align-items-center dropdown-toggle no-arrow"
+                  style="border-bottom: none"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <!-- <div class="icon-circle">
+                  <i class="fas fa-tools"></i>
+                </div> -->
+                  <p
+                    class="category ps-2 mt-3"
+                    style="border-left: 0.5px #bababa"
+                  >
+                    Hardware
+                  </p>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item category_sub" href="#"
+                      >Storage devices</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item category_sub" href="#"
+                      >Input devices</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item category_sub" href="#"
+                      >Output devices</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <a
+                  class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                  style="border-bottom: none"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <!-- <div class="icon-circle">
+                  <i class="fas fa-laptop-code"></i>
+                </div> -->
+                  <p
+                    class="category ps-2 mt-3"
+                    style="border-left: 0.5px #bababa"
+                  >
+                    Software
+                  </p>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item category_sub" href="#"
+                      >Accounting Software</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item category_sub" href="#"
+                      >Graphics Software</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item category_sub" href="#">Freeware</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <a
+                  class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                  style="border-bottom: none"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <!-- <div class="icon-circle">
+                  <i class="fas fa-desktop"></i>
+                </div> -->
+                  <p
+                    class="category ps-2 mt-3"
+                    style="border-left: 0.5px #bababa"
+                  >
+                    Computer
+                  </p>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item category_sub" href="#">Desktops</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item category_sub" href="#">Monitors</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item category_sub" href="#"
+                      >Accessories</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Repeat the above structure for other dropdowns, changing the icon and text as needed -->
+              <div class="dropdown">
+                <a
+                  class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                  style="border-bottom: none"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <!-- <div class="icon-circle">
+                  <i class="fas fa-laptop"></i>
+                </div> -->
+                  <p
+                    class="category ps-2 mt-3"
+                    style="border-left: 0.5px #bababa"
+                  >
+                    Laptops
+                  </p>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item category_sub" href="#">HP</a></li>
+                  <li>
+                    <a class="dropdown-item category_sub" href="#">Lenovo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item category_sub" href="#">Dell</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <a
+                  class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                  style="border-bottom: none"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <!-- <div class="icon-circle">
+                  <i class="fas fa-server"></i>
+                </div> -->
+                  <p
+                    class="category ps-2 mt-3"
+                    style="border-left: 0.5px #bababa"
+                  >
+                    Server Parts
+                  </p>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item category_sub" href="#"
+                      >Motherboard</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item category_sub" href="#">CPU</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item category_sub" href="#">RAM</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <a
+                  class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-start no-arrow"
+                  style="border-bottom: none"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <!-- <div class="icon-circle">
+                  <i class="fas fa-microsoft"></i>
+                </div> -->
+                  <p
+                    class="category ps-2 mt-3"
+                    style="border-left: 0.5px #bababa"
+                  >
+                    Microsoft Office
+                  </p>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item category_sub" href="#">Word</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item category_sub" href="#">Excel</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item category_sub" href="#"
+                      >PowerPoint</a
+                    >
+                  </li>
+                </ul>
+              </div>
+
+              <div class="dropdown">
+                <a
+                  class="btn btn-secondary dropdown-toggle d-flex align-items-center justify-content-center no-arrow"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <p class="category mt-3">SHOW ALL CATEGORIES</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-7 col-12 d-flex align-items-stretch">
+            <div class="w-100">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide h-100"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner h-100">
+                  <div class="carousel-item active h-100">
+                    <img
+                      src="./assets/images/Slider 2.png"
+                      class="d-block w-100 h-100"
+                      alt="..."
+                      style="object-fit: cover"
+                    />
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img
+                      src="./assets/images/Slider 3.png"
+                      class="d-block w-100 h-100"
+                      alt="..."
+                      style="object-fit: cover"
+                    />
+                  </div>
+                  <div class="carousel-item h-100">
+                    <img
+                      src="./assets/images/Slider 5.png"
+                      class="d-block w-100 h-100"
+                      alt="..."
+                      style="object-fit: cover"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-    <hr />
-    <div class="copyrights">
-      <p class="text-center m-0">
-        Terms and Conditions |
-        Privacy Policy |
-        2024 © Copyright Dealslah Pte Ltd. All Rights Reserved.
-      </p>
-    </div>
-  </section>
-  <!-- Footer End  -->
+    </section>
+    <!-- Hero Seaction End -->
 
+    <!-- Top Deals -->
+    <div class="container mb-5">
+      <h5 class="pt-5 pb-4 top-deals">TOP DEALS</h5>
+      <div class="row pb-2 owl-carousel carousel_cards_slide owl-theme">
+        <div class="item col mb-3">
+          <a href="#" style="text-decoration: none">
+            <div class="card topCard h-100">
+              <div>
+                <span class="badge trending-badge">5% off</span>
+                <img
+                  src="assets/images/Python.svg"
+                  class="img-fluid"
+                  alt="card_image"
+                />
+              </div>
+              <p class="content-badge text-start">Python</p>
+            </div>
+          </a>
+        </div>
+        <div class="item col mb-3">
+          <a href="#" style="text-decoration: none">
+            <div class="card topCard card-img-top1 h-100">
+              <div>
+                <span class="badge trending-badge">10% off</span>
+                <img
+                  src="assets/images/Google.svg"
+                  class="img-fluid"
+                  alt="card_image"
+                />
+              </div>
+              <p class="content-badge">Google Work Space</p>
+            </div>
+          </a>
+        </div>
+        <div class="item col mb-3">
+          <a href="#" style="text-decoration: none">
+            <div class="card topCard card-img-top1 h-100">
+              <div>
+                <span class="badge trending-badge">10% off</span>
+                <img
+                  src="assets/images/Java.svg"
+                  class="img-fluid"
+                  alt="card_image"
+                />
+              </div>
+              <p class="content-badge">Java</p>
+            </div>
+          </a>
+        </div>
+        <div class="item col mb-3">
+          <a href="#" style="text-decoration: none">
+            <div class="card topCard card-img-top1 h-100">
+              <div>
+                <span class="badge trending-badge">5% off</span>
+                <img
+                  src="assets/images/Microsoft.svg"
+                  class="img-fluid"
+                  alt="card_image"
+                />
+              </div>
+              <p class="content-badge">Microsoft Azure</p>
+            </div>
+          </a>
+        </div>
+        <div class="item col mb-3">
+          <a href="#" style="text-decoration: none">
+            <div class="card topCard card-img-top1 h-100">
+              <div>
+                <span class="badge trending-badge">15% off</span>
+                <img
+                  src="assets/images/AWS.svg"
+                  class="img-fluid w-100"
+                  alt="card_image"
+                />
+              </div>
+              <p class="content-badge">AWS</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Top Deals End -->
 
-  <script src="https://kit.fontawesome.com/5b8838406b.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" async></script>
-  <!-- jQuery -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
-  <!-- jQuery Validator -->
-  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="./assets/js/custom.js"></script>
-</body>
+    <!-- Banner -->
+    <div class="container mt-4 px-4">
+      <div class="row mb-5">
+        <div class="col-md-4 col-12 p-1 card_section mb-3">
+          <div class="card h-100 banner_card">
+            <div class="d-flex justify-content-end align-items-center p-2">
+              <span
+                class="badge bg-primary fw-normal badgebordernone rounded-0"
+              >
+                Trending
+              </span>
+            </div>
 
+            <div
+              class="heading d-flex justify-content-center align-items-center"
+            >
+              BANNER
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-12 p-1 card_section mb-3">
+          <div class="card h-100 banner_card">
+            <div class="d-flex justify-content-end align-items-center p-2">
+              <span
+                class="badge bg-primary fw-normal badgebordernone rounded-0"
+              >
+                Best Seller
+              </span>
+            </div>
+            <div
+              class="heading d-flex justify-content-center align-items-center"
+            >
+              BANNER
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 p-1 card_section mb-3">
+          <div class="card h-100 banner_card">
+            <div class="d-flex justify-content-end align-items-center p-2">
+              <span
+                class="badge bg-primary fw-normal badgebordernone rounded-0"
+              >
+                Our Choice
+              </span>
+            </div>
+            <div
+              class="heading d-flex justify-content-center align-items-center"
+            >
+              BANNER
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 p-1 card_section mb-3">
+          <div class="card h-100 banner_card">
+            <div class="d-flex justify-content-end align-items-center p-2">
+              <span
+                class="badge bg-primary fw-normal badgebordernone rounded-0"
+              >
+                Latest
+              </span>
+            </div>
+            <div
+              class="heading d-flex justify-content-center align-items-center"
+            >
+              BANNER
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 p-1 card_section mb-3">
+          <div class="card h-100 banner_card">
+            <div class="d-flex justify-content-end align-items-center p-2">
+              <span
+                class="badge bg-primary fw-normal badgebordernone rounded-0"
+              >
+                Trending
+              </span>
+            </div>
+            <div
+              class="heading d-flex justify-content-center align-items-center"
+            >
+              BANNER
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-12 p-1 card_section mb-3">
+          <div class="card h-100 banner_card">
+            <div class="d-flex justify-content-end align-items-center p-2">
+              <span
+                class="badge bg-primary fw-normal badgebordernone rounded-0"
+              >
+                Best Celler
+              </span>
+            </div>
+            <div
+              class="heading d-flex justify-content-center align-items-center"
+            >
+              BANNER
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5 px-0">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="commerce_head">CATEGORY DEALS</p>
+          <p class="seeMore-text">SEE MORE&nbsp;></p>
+        </div>
+        <div class="row m-0">
+          <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0 d-flex align-items-center">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 250px"
+                  >
+                    <img
+                      src="./assets/images/robot.png"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12 ps-3 pb-2">
+                  <p class="commerce p-0 mb-1" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-2">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 250px"
+                  >
+                    <img
+                      src="./assets/images/robot.png"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12 ps-3 pb-2">
+                  <p class="commerce p-0 mb-1" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-2">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5 px-0">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="commerce_head">CATEGORY DEALS</p>
+          <p class="seeMore-text">SEE MORE&nbsp;></p>
+        </div>
+        <div class="row m-0">
+          <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 250px"
+                  >
+                    <img
+                      src="./assets/images/robot.png"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12 ps-3 pb-2">
+                  <p class="commerce p-0 mb-1" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-2">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 250px"
+                  >
+                    <img
+                      src="./assets/images/robot.png"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12 ps-3 pb-2">
+                  <p class="commerce p-0 mb-1" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-2">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5 px-0">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="commerce_head">CATEGORY DEALS</p>
+          <p class="seeMore-text">SEE MORE&nbsp;></p>
+        </div>
+        <div class="row m-0">
+          <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 250px"
+                  >
+                    <img
+                      src="./assets/images/robot.png"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12 ps-3 pb-2">
+                  <p class="commerce p-0 mb-1" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-2">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 250px"
+                  >
+                    <img
+                      src="./assets/images/robot.png"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12 ps-3 pb-2">
+                  <p class="commerce p-0 mb-1" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-2">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5 px-0">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="commerce_head">CATEGORY DEALS</p>
+          <p class="seeMore-text">SEE MORE&nbsp;></p>
+        </div>
+        <div class="row m-0">
+          <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 250px"
+                  >
+                    <img
+                      src="./assets/images/robot.png"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12 ps-3 pb-2">
+                  <p class="commerce p-0 mb-1" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-2">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 250px"
+                  >
+                    <img
+                      src="./assets/images/robot.png"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12 ps-3 pb-2">
+                  <p class="commerce p-0 mb-1" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-2">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5 px-0">
+        <div class="d-flex justify-content-between align-items-center">
+          <p class="commerce_head">CATEGORY DEALS</p>
+          <p class="seeMore-text">SEE MORE&nbsp;></p>
+        </div>
+        <div class="row m-0">
+          <div class="col-md-6 col-12 mb-sm-2 p-0 pe-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 250px"
+                  >
+                    <img
+                      src="./assets/images/robot.png"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12 ps-3 pb-2">
+                  <p class="commerce p-0 mb-1" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-2">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 mb-sm-2 p-0 ps-md-4">
+            <div class="card h-80 commerce_card">
+              <div class="row m-0">
+                <div class="col-lg-5 col-12 p-0 m-0">
+                  <div
+                    class="commerce_badge2"
+                    style="position: relative; width: 100%; height: 250px"
+                  >
+                    <img
+                      src="./assets/images/robot.png"
+                      alt="images"
+                      class="img-fluid w-100 h-100"
+                      style="object-fit: cover"
+                    />
+                    <span class="badge_image">10% OFF</span>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12 ps-3 pb-2">
+                  <p class="commerce p-0 mb-1" style="font-size: 1rem">
+                    e-commerce Logistics
+                  </p>
+                  <p class="p-0 mb-2">
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span style="color: #ffc200"
+                      ><i class="fa-regular fa-star"></i
+                    ></span>
+                  </p>
+                  <p
+                    class="commerce_content"
+                    style="font-size: 0.9rem; line-height: 1.2rem"
+                  >
+                    Enjoy a flat 5% discount in e-commerce logistics from
+                    Trucklah! We ensure delivery on time, every time. Trucklah,
+                    moving made easy.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                    <div class="commerce_amount" style="font-size: 1.2rem">
+                      $65
+                    </div>
+                    <div class="">
+                      <p
+                        class="badge commerce_badge"
+                        style="font-size: 0.85rem"
+                      >
+                        DEALSLAHB 5
+                      </p>
+                    </div>
+                  </div>
+                  <p class="commerce_price" style="font-size: 0.85rem">
+                    Regular Price &nbsp;&nbsp;
+                    <span><s>$70</s></span>
+                  </p>
+                  <p class="mb-0" style="color: #304ffe; font-size: 0.85rem">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    &nbsp;&nbsp; <span class="commerce_place">Singapore</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <i class="fa-solid fa-location-dot" aria-hidden="true"></i> -->
+        </div>
+      </div>
+    </div>
+    <!-- Banner End -->
+
+    <!-- Footer Start  -->
+    <section class="footer-conent">
+      <div class="container">
+        <div class="row m-0 m-0">
+          <div class="col-md-3 text-start mt-4">
+            <div class="headings">
+              <h5 class="footer-title">Dealslah Business</h5>
+              <p class="text-start">
+                Top Money Saver Deals just for you. Exclusive deals, coupons,
+                exciting offers that helps you stay within the budget.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-2 text-start mt-4">
+            <div class="headings">
+              <h5 class="footer-title">Help</h5>
+            </div>
+            <div class="footer-links">
+              <div class="links2">
+                <a
+                  href="#"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #ffff"
+                  >Blog</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="#"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #ffff"
+                  >Press</a
+                >
+              </div>
+              <div class="links2">
+                <a
+                  href="contact_us"
+                  rel="noopener noreferrer"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #ffff"
+                  >FAQ</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2 text-start mt-4">
+            <div class="headings">
+              <h5 class="footer-title" style="white-space: nowrap">
+                CATEGORIES
+              </h5>
+            </div>
+            <div class="footer-links">
+              <div class="links2">
+                <a
+                  href="#"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #ffff"
+                >
+                  Education
+                </a>
+              </div>
+              <div class="links2">
+                <a
+                  href="#"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #ffff"
+                >
+                  Industrial
+                </a>
+              </div>
+              <div class="links2">
+                <a
+                  href="#"
+                  class="text-decoration-none"
+                  style="font-size: 16px; color: #ffff"
+                >
+                  Electronics
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 mt-4">
+            <div class="footersearch d-flex px-4 gap-3">
+              <input
+                name="email"
+                class="form-control-sm form-control rounded"
+                type="text"
+              />
+              <button class="btn footer-btn p-2">SUBSCRIBE</button>
+            </div>
+            <div class="text-start p-5">
+              <div class="d-flex flex-wrap my-2">
+                <a
+                  href="https://www.facebook.com/ecscloud/?_rdr"
+                  class="p-1 text-decoration-none text-white"
+                  target="_blank"
+                >
+                  <span class="mediaIconBg text-center">
+                    <i
+                      class="fa-brands fa-facebook-f"
+                      style="
+                        font-size: 22px;
+                        background: #faebd754;
+                        padding: 10px;
+                        width: 40px;
+                        border-radius: 5px;
+                      "
+                    ></i>
+                  </span>
+                </a>
+
+                <a
+                  href="https://x.com/ecscloudinfote2"
+                  class="p-1 text-decoration-none text-white"
+                  target="_blank"
+                >
+                  <span class="mediaIconBg">
+                    <i
+                      class="fa-brands fa-x-twitter"
+                      style="
+                        font-size: 22px;
+                        background: #faebd754;
+                        padding: 10px;
+                        border-radius: 5px;
+                      "
+                    ></i>
+                  </span>
+                </a>
+
+                <a
+                  href="https://www.youtube.com/channel/UCIbNIWhaDnRs-gFuJ0sTNCQ/videos"
+                  class="p-1 text-decoration-none text-white"
+                  target="_blank"
+                >
+                  <span class="mediaIconBg">
+                    <i
+                      class="fa-brands fa-youtube"
+                      style="
+                        font-size: 22px;
+                        background: #faebd754;
+                        padding: 10px;
+                        border-radius: 5px;
+                      "
+                    ></i>
+                  </span>
+                </a>
+                <a
+                  href="https://www.instagram.com/ecscloudinfotech/"
+                  class="p-1 text-decoration-none text-white"
+                  target="_blank"
+                >
+                  <span class="mediaIconBg">
+                    <i
+                      class="fa-brands fa-instagram"
+                      style="
+                        font-size: 22px;
+                        background: #faebd754;
+                        padding: 10px;
+                        border-radius: 5px;
+                      "
+                    ></i>
+                  </span>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/ecscloudinfotech/"
+                  class="p-1 text-decoration-none text-white"
+                  target="_blank"
+                >
+                  <span class="mediaIconBg">
+                    <i
+                      class="fa-brands fa-linkedin-in"
+                      style="
+                        font-size: 22px;
+                        background: #faebd754;
+                        padding: 10px;
+                        border-radius: 5px;
+                      "
+                    ></i>
+                  </span>
+                </a>
+                <a
+                  href="https://www.tiktok.com/@ecsaio"
+                  class="p-1 text-decoration-none text-white"
+                  target="_blank"
+                >
+                  <span class="mediaIconBg">
+                    <i
+                      class="fa-brands fa-tiktok"
+                      style="
+                        font-size: 22px;
+                        background: #faebd754;
+                        padding: 10px;
+                        border-radius: 5px;
+                      "
+                    ></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="copyrights">
+        <p class="text-center m-0">
+          Terms and Conditions | Privacy Policy | 2024 © Copyright Dealslah Pte
+          Ltd. All Rights Reserved.
+        </p>
+      </div>
+    </section>
+    <!-- Footer End  -->
+
+    <script
+      src="https://kit.fontawesome.com/5b8838406b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js"
+      async
+    ></script>
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <!-- jQuery Validator -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./assets/js/custom.js"></script>
+  </body>
 </html>

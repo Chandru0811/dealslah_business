@@ -17,9 +17,10 @@
   line-height: 45.36px;
 }
 
-.deals_logo{
+.deals_logo {
   margin-left: -2.5rem;
 }
+
 /* Header  */
 
 .offcanvas-toggler {
@@ -93,7 +94,7 @@
     padding: 0 8px;
   }
 
-  .deals_logo{
+  .deals_logo {
     margin-left: 1px;
   }
 
@@ -120,7 +121,6 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 22.68px;
-
 }
 
 .nav-link:hover {
@@ -381,14 +381,14 @@
 
 .category {
   color: #bababa;
-  text-align: center;
+  text-align: start !important;
   width: 100%;
   text-transform: uppercase;
 }
 
 .category_sub {
   color: #515050;
-  text-align: center;
+  text-align: start !important;
   text-transform: uppercase;
 }
 
@@ -431,7 +431,7 @@
 
 .trending-badge {
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 10px;
   width: 3rem;
   background-color: #304ffe;
@@ -439,7 +439,8 @@
   color: #fff;
   z-index: 2;
   font-weight: 400;
-  border-radius: 5px;
+  border-radius: 5px !important;
+  padding: 5px;
 }
 
 .content-badge {
@@ -497,6 +498,9 @@
   border: none !important;
 }
 
+.owl-stage-outer {
+  padding: 0 !important;
+}
 .heading {
   display: flex;
   justify-content: center;
