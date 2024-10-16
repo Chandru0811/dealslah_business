@@ -21,6 +21,16 @@
   margin-left: -2.5rem;
 }
 
+.footer_para {
+  text-align: start;
+}
+
+@media screen and (max-width: 555px) {
+  .footer_para {
+    text-align: center !important;
+  }
+}
+
 /* Header  */
 
 .offcanvas-toggler {
